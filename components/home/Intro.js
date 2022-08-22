@@ -5,12 +5,6 @@ import { motion } from "framer-motion";
 import styles from "../../styles/home/intro.module.css";
 
 function Intro() {
-  const buttonTxtMotion = {
-    hover: {
-      //   color: "var(--clr-light-1)",
-    },
-  };
-
   const layerMotion = {
     rest: {
       transform: "translateX(-100%)",
@@ -36,14 +30,14 @@ function Intro() {
       </div>
 
       <p className={styles.paragraph}>
-        I'am a passionate Frontend Developer with some Backend knowledge,
+        I&apos;m a passionate Frontend Developer with some Backend knowledge,
         specializing in building awesome UX/UI designs that deliver peculiar and
         exceptional digital experiences.
       </p>
 
       <Link href="/">
         <motion.button initial="rest" whileHover="hover" animate="rest">
-          <motion.p variants={buttonTxtMotion}>GET IN TOUCH</motion.p>
+          <p>GET IN TOUCH</p>
 
           <motion.div
             className={styles.layer}
