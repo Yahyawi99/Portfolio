@@ -1,0 +1,5 @@
+.container {
+  width: 100%;
+  height: 100vh;
+  background: linear-gradient(var(--layer-1), var(--layer-1)), url("../../public/assets/images/programming.png") center/cover no-repeat;
+}
