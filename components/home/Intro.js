@@ -7,10 +7,10 @@ import styles from "../../styles/home/intro.module.css";
 function Intro() {
   const layerMotion = {
     rest: {
-      transform: "translateX(-100%)",
+      transform: "translateX(100%)",
     },
     hover: {
-      transform: "translateX(100%)",
+      transform: "translateX(0%)",
     },
   };
 

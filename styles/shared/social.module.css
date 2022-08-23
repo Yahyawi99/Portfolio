@@ -1,0 +1,36 @@
+.container {
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+
+.container>div {
+    display: flex;
+    flex-direction: column;
+    gap: 100px;
+}
+
+/* logo */
+.container>div>div:nth-child(1) {
+    width: 60px;
+    height: 60px;
+    position: relative;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+
+/* icons */
+.container>div>div:nth-child(2) {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.container>div>div:nth-child(2)>div {
+    display: flex;
+    justify-content: center;
+    color: #fff;
+    font-size: 2rem;
+}
