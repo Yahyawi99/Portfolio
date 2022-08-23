@@ -1,4 +1,5 @@
 import React from "react";
+import Link from "next/link";
 // icons
 import { MdHome, MdPerson, MdEmail } from "react-icons/md";
 import { FaBriefcase, FaGamepad } from "react-icons/fa";
@@ -9,25 +10,35 @@ function Nav() {
   return (
     <section className={styles.container}>
       <div>
-        <div>
-          <MdHome />
-        </div>
+        <Link href="/">
+          <a>
+            <MdHome />
+          </a>
+        </Link>
 
-        <div>
-          <MdPerson />
-        </div>
+        <Link href="/">
+          <a>
+            <MdPerson />
+          </a>
+        </Link>
 
-        <div>
-          <FaBriefcase />
-        </div>
+        <Link href="/">
+          <a>
+            <FaBriefcase />
+          </a>
+        </Link>
 
-        <div>
-          <FaGamepad />
-        </div>
+        <Link href="/">
+          <a>
+            <FaGamepad />
+          </a>
+        </Link>
 
-        <div>
-          <MdEmail />
-        </div>
+        <Link href="/">
+          <a>
+            <MdEmail />
+          </a>
+        </Link>
       </div>
     </section>
   );

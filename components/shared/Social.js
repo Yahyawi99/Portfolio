@@ -1,7 +1,13 @@
 import React from "react";
 import Image from "next/image";
+import Link from "next/link";
 // icons
-import { FaGithub, FaTwitter, FaLinkedin, FaFacebook } from "react-icons/fa";
+import {
+  FaGithubAlt,
+  FaTwitter,
+  FaLinkedinIn,
+  FaFacebookF,
+} from "react-icons/fa";
 // css
 import styles from "../../styles/shared/social.module.css";
 
@@ -20,21 +26,29 @@ function Social() {
         </div>
 
         <div>
-          <div>
-            <FaGithub />
-          </div>
+          <Link href="/">
+            <a target="_blank">
+              <FaGithubAlt />
+            </a>
+          </Link>
 
-          <div>
-            <FaTwitter />
-          </div>
+          <Link href="/">
+            <a target="_blank">
+              <FaTwitter />
+            </a>
+          </Link>
 
-          <div>
-            <FaLinkedin />
-          </div>
+          <Link href="/">
+            <a target="_blank">
+              <FaLinkedinIn />
+            </a>
+          </Link>
 
-          <div>
-            <FaFacebook />
-          </div>
+          <Link href="/">
+            <a target="_blank">
+              <FaFacebookF />
+            </a>
+          </Link>
         </div>
       </div>
     </section>

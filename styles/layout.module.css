@@ -3,11 +3,13 @@
     min-height: 100vh;
     display: flex;
     justify-content: space-between;
+    align-items: center;
     background: linear-gradient(var(--layer-1), var(--layer-1)), url("/assets/images/programming.png") center/cover no-repeat;
 }
 
 .main>section {
     display: flex;
-    gap: 20%;
+    align-items: center;
+    gap: 100px;
     margin-left: 50px;
 }

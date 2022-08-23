@@ -28,9 +28,25 @@
     gap: 25px;
 }
 
-.container>div>div:nth-child(2)>div {
+.container a {
+    width: 50px;
+    height: 50px;
     display: flex;
     justify-content: center;
-    color: #fff;
-    font-size: 2rem;
+    align-items: center;
+    color: var(--clr-light-4);
+    font-size: 1.75rem;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: .25s;
+}
+
+.container a:nth-child(3),
+.container a:nth-child(4) {
+    font-size: 1.5rem;
+}
+
+.container a:hover {
+    color: var(--clr-dark-4);
+    background-color: var(--clr-light-4);
 }

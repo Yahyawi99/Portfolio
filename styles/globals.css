@@ -30,9 +30,16 @@ body {
   font-family: 'Oswald', sans-serif;
 }
 
+
+/* shared classes */
 button {
   border: none;
   background: transparent;
   color: inherit;
   font-family: inherit;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
 }

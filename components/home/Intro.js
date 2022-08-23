@@ -1,19 +1,9 @@
 import React from "react";
 import Link from "next/link";
-import { motion } from "framer-motion";
 // css
 import styles from "../../styles/home/intro.module.css";
 
 function Intro() {
-  const layerMotion = {
-    rest: {
-      transform: "translateX(100%)",
-    },
-    hover: {
-      transform: "translateX(0%)",
-    },
-  };
-
   return (
     <section className={styles.container}>
       <p>Hi, my name is</p>
@@ -36,14 +26,11 @@ function Intro() {
       </p>
 
       <Link href="/">
-        <motion.button initial="rest" whileHover="hover" animate="rest">
+        <button>
           <p>GET IN TOUCH</p>
 
-          <motion.div
-            className={styles.layer}
-            variants={layerMotion}
-          ></motion.div>
-        </motion.button>
+          <div className={styles.layer}></div>
+        </button>
       </Link>
     </section>
   );

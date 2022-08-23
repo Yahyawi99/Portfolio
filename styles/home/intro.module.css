@@ -56,7 +56,12 @@
     background-color: var(--clr-light-4);
     position: absolute;
     top: 0;
-    transition: .15s;
+    transition: .25s;
     transition-timing-function: linear;
+    transform: translateX(100%);
     z-index: 0;
+}
+
+.container button:hover .layer {
+    transform: translateX(0%);
 }
