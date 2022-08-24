@@ -10,7 +10,7 @@
   --clr-dark-3: #01172F;
   --clr-dark-4: #000;
 
-  --layer-1: rgba(0, 0, 0, 0.75);
+  --layer-1: rgba(0, 0, 0, .8);
   --layer-2: rgba(0, 0, 0, 0.5);
   --layer-3: rgba(0, 0, 0, 0.25);
 }
@@ -19,6 +19,7 @@
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
 
@@ -27,7 +28,9 @@ html {
 }
 
 body {
+  background: linear-gradient(var(--layer-1), var(--layer-1)), url("/assets/images/programming.png") center/cover no-repeat;
   font-family: 'Oswald', sans-serif;
+  overflow: hidden;
 }
 
 

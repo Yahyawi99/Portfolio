@@ -29,24 +29,28 @@ function Social() {
           <Link href="/">
             <a target="_blank">
               <FaGithubAlt />
+              <p>GITHUB</p>
             </a>
           </Link>
 
           <Link href="/">
             <a target="_blank">
               <FaTwitter />
+              <p>TWITTER</p>
             </a>
           </Link>
 
           <Link href="/">
             <a target="_blank">
               <FaLinkedinIn />
+              <p>LINKEDIN</p>
             </a>
           </Link>
 
           <Link href="/">
             <a target="_blank">
               <FaFacebookF />
+              <p>FACEBOOK</p>
             </a>
           </Link>
         </div>

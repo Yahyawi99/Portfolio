@@ -39,6 +39,7 @@
     border-radius: 50%;
     cursor: pointer;
     transition: .25s;
+    position: relative;
 }
 
 .container a:nth-child(3),
@@ -46,7 +47,43 @@
     font-size: 1.5rem;
 }
 
+.container a>p {
+    width: 130px;
+    height: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    background-color: var(--clr-light-4);
+    color: var(--clr-dark-4);
+    position: absolute;
+    left: 0px;
+    font-size: .9rem;
+    font-weight: 500;
+    border-radius: 25px;
+    z-index: 0;
+    opacity: 0;
+    transition: .5s;
+    padding: 0px 0px 0px 25px;
+}
+
+.container a:nth-child(3)>p,
+.container a:nth-child(4)>p {
+    width: 140px;
+    left: 0px;
+}
+
+
+.container a>svg {
+    position: relative;
+    z-index: 1;
+}
+
 .container a:hover {
     color: var(--clr-dark-4);
     background-color: var(--clr-light-4);
+}
+
+.container a:hover p {
+    opacity: 1;
+    padding: 0px 0px 0px 60px;
 }
