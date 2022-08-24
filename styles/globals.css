@@ -28,6 +28,8 @@ html {
 }
 
 body {
+  width: 100vw;
+  height: 100vh;
   background: linear-gradient(var(--layer-1), var(--layer-1)), url("/assets/images/programming.png") center/cover no-repeat;
   font-family: 'Oswald', sans-serif;
   overflow: hidden;

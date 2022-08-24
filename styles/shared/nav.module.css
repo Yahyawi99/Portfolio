@@ -9,6 +9,7 @@
     display: flex;
     flex-direction: column;
     gap: 25px;
+    transition: 0s;
 }
 
 /* Icon */
@@ -22,7 +23,6 @@
     font-size: 1.75rem;
     border-radius: 50%;
     cursor: pointer;
-    transition: .25s;
     position: relative;
 }
 
@@ -33,6 +33,7 @@
 .container>div>a:hover {
     color: var(--clr-dark-4);
     background-color: var(--clr-light-4);
+    transition: .25s;
 }
 
 
@@ -52,7 +53,6 @@
     border-radius: 25px;
     z-index: 0;
     opacity: 0;
-    transition: .5s;
     padding: 0px 0px 0px 50px;
 }
 
@@ -68,6 +68,7 @@
 }
 
 .container>div>a:hover p {
+    transition: .5s;
     opacity: 1;
     padding: 0px 0px 0px 20px;
 }
@@ -94,14 +95,12 @@
 
     /* *************************** */
     .container {
-        width: 100%;
-        height: 100vh;
         justify-content: flex-end;
         position: absolute;
-        top: 0px;
+        inset: 0;
         z-index: 1;
         transform: translateX(100%);
-        transition-delay: .5s;
+        transition-delay: .25s;
     }
 
     .container>div:nth-child(1) {
@@ -110,33 +109,37 @@
         height: 100%;
         background-color: var(--clr-dark-3);
         transform: translateX(100%);
-        transition: .5s;
+        transition: .25s;
         padding: 75px 0 0 0;
     }
 
     .container .layer {
         width: 100%;
         height: 100%;
+        background-color: var(--layer-3);
         display: flex;
         position: absolute;
         inset: 0;
         z-index: -1;
-        transition: .5s;
+        transition: .25s;
     }
 
 
     /* Toggle functionnality  */
     .openNav {
-        transform: translateX(0%);
+        transform: translateX(0);
         transition-delay: .0s;
     }
 
+
     .openNav>div:nth-child(1) {
         transform: translateX(0%);
+        transition: .5s;
     }
 
     .openNav .layer {
         backdrop-filter: blur(5px);
+        transition: .5s;
     }
 
 
@@ -165,4 +168,5 @@
         width: fit-content;
         left: 0;
     }
+
 }
