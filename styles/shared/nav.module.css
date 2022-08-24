@@ -108,10 +108,10 @@
         width: 100%;
         max-width: 400px;
         height: 100%;
-        background-color: var(--clr-dark-1);
+        background-color: var(--clr-dark-3);
         transform: translateX(100%);
         transition: .5s;
-        padding: 70px 0 0 0;
+        padding: 75px 0 0 0;
     }
 
     .container .layer {
