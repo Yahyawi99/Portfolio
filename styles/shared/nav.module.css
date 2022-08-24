@@ -20,20 +20,25 @@
     justify-content: center;
     align-items: center;
     color: var(--clr-light-4);
-    font-size: 1.75rem;
     border-radius: 50%;
     cursor: pointer;
     position: relative;
 }
 
-.container>div>a:nth-child(3) {
-    font-size: 1.5rem;
-}
 
 .container>div>a:hover {
     color: var(--clr-dark-4);
     background-color: var(--clr-light-4);
     transition: .25s;
+}
+
+.container a svg {
+    fill: var(--clr-light-4);
+    transition: .25s;
+}
+
+.container>div>a:hover svg {
+    fill: var(--clr-dark-4)
 }
 
 
@@ -56,13 +61,17 @@
     padding: 0px 0px 0px 50px;
 }
 
-.container>div>a:nth-child(3)>p,
+.container>div>a:nth-child(3)>p {
+    width: 140px;
+    left: -90px;
+}
+
 .container>div>a:nth-child(4)>p {
     width: 150px;
     left: -100px;
 }
 
-.container a>svg {
+.container a>i {
     position: relative;
     z-index: 1;
 }
@@ -85,6 +94,10 @@
     color: var(--clr-dark-4);
     background-color: var(--clr-light-4);
     pointer-events: none;
+}
+
+.container .currentPath svg {
+    fill: var(--clr-dark-4)
 }
 
 
