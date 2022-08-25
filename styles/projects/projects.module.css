@@ -34,3 +34,48 @@
 .container>div:nth-child(1) h2:nth-child(2) span {
     color: var(--clr-light-4);
 }
+
+
+/* Projects */
+.container>div:nth-child(2) {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 25px;
+    padding: 50px 20px;
+}
+
+.container>div:nth-child(2)>div {
+    width: 95%;
+    height: 270px;
+    max-width: 270px;
+    border-radius: 5px;
+    position: relative;
+    cursor: pointer;
+    overflow: hidden;
+    background-color: red;
+}
+
+/* Layer */
+.layer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    background-color: var(--clr-dark-2);
+    position: absolute;
+    inset: 0;
+}
+
+.layer h2 {
+    color: var(--clr-light-1);
+}
+
+.layer img {
+    max-width: 40px;
+}
+
+.container>div:nth-child(2)>div:nth-child(3) img {
+    max-width: 150px;
+}
