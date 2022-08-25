@@ -1,12 +1,12 @@
 .main {
     width: 100%;
     max-width: 1500px;
-    min-height: 100vh;
+    height: 100vh;
     display: flex;
-    justify-content: space-between;
     align-items: center;
     position: relative;
     overflow-x: hidden;
+    overflow-y: scroll;
     backdrop-filter: blur(3px);
     padding: 0px 50px;
     margin: 0 auto;
@@ -16,10 +16,24 @@
     display: none;
 }
 
-.main>section:nth-child(2) {
-    display: flex;
-    align-items: center;
-    gap: 125px;
+.main>section:nth-child(3) {
+    width: 100%;
+}
+
+/* Style scroll bar */
+.main::-webkit-scrollbar {
+    appearance: none;
+    width: 4px;
+
+}
+
+.main::-webkit-scrollbar-thumb {
+    background-color: var(--clr-light-4);
+    border-radius: 5px;
+}
+
+.main::-webkit-scrollbar-track {
+    width: 5px;
 }
 
 

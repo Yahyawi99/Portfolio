@@ -11,10 +11,8 @@ function Layout({ children }) {
     <main className={styles.main}>
       <Header />
 
-      <section>
-        <Social />
-        {children}
-      </section>
+      <Social />
+      <section>{children}</section>
       <Nav />
     </main>
   );

@@ -6,7 +6,6 @@ import styles from "../../styles/shared/nav.module.css";
 
 function Nav() {
   const { nav, currentPath } = useGlobal();
-  console.log(currentPath);
 
   return (
     <section className={`${styles.container} ${nav ? styles.openNav : ""}`}>
@@ -43,7 +42,7 @@ function Nav() {
           </a>
         </Link>
 
-        <Link href="/">
+        <Link href="/projects">
           <a>
             <i>
               <svg

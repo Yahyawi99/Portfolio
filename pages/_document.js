@@ -15,6 +15,17 @@ function Document() {
           rel="stylesheet"
         />
 
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link
+          rel="preconnect"
+          href="https://fonts.gstatic.com"
+          cross0rigin="true"
+        />
+        <link
+          href="https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap"
+          rel="stylesheet"
+        />
+
         <link rel="icon" href="/assets/images/godfather.jpg" />
       </Head>
       <body>
