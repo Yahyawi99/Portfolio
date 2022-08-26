@@ -13,12 +13,99 @@ function Provider({ children }) {
     setCurrentPath(asPath);
   }, [asPath]);
 
+  // Hover effect on Project
+  const projectHoverEffect = (myProjects) => {
+    myProjects.forEach((e) => {
+      const layer = e.children[1];
+
+      e.addEventListener("mouseenter", (e) => {
+        if (e.offsetY <= 30) {
+          layer.style.display = "flex";
+          layer.style.transform = "translateY(-100%)";
+
+          setTimeout(() => {
+            layer.style.transform = "translateY(0%)";
+          }, 50);
+          return;
+        }
+
+        if (e.offsetX >= 200) {
+          layer.style.display = "flex";
+          layer.style.transform = "translateX(100%)";
+
+          setTimeout(() => {
+            layer.style.transform = "translateX(0%)";
+          }, 50);
+          return;
+        }
+
+        if (e.offsetY >= 200) {
+          layer.style.display = "flex";
+          layer.style.transform = "translateY(100%)";
+
+          setTimeout(() => {
+            layer.style.transform = "translateY(0%)";
+          }, 50);
+          return;
+        }
+
+        if (e.offsetX <= 30) {
+          layer.style.display = "flex";
+          layer.style.transform = "translateX(-100%)";
+
+          setTimeout(() => {
+            layer.style.transform = "translateX(0%)";
+          }, 50);
+          return;
+        }
+      });
+
+      e.addEventListener("mouseleave", (e) => {
+        if (e.offsetY <= 30) {
+          layer.style.transform = "translateY(-100%)";
+
+          setTimeout(() => {
+            layer.style.display = "none";
+          }, 250);
+          return;
+        }
+
+        if (e.offsetX >= 200) {
+          layer.style.transform = "translateX(100%)";
+
+          setTimeout(() => {
+            layer.style.display = "none";
+          }, 250);
+          return;
+        }
+
+        if (e.offsetY >= 200) {
+          layer.style.transform = "translateY(100%)";
+
+          setTimeout(() => {
+            layer.style.display = "none";
+          }, 250);
+          return;
+        }
+
+        if (e.offsetX <= 30) {
+          layer.style.transform = "translateX(-100%)";
+
+          setTimeout(() => {
+            layer.style.display = "none";
+          }, 250);
+        }
+      });
+    });
+  };
+
   return (
     <AppContext.Provider
       value={{
         nav,
         setNav,
         currentPath,
+        projectHoverEffect,
       }}
     >
       {children}

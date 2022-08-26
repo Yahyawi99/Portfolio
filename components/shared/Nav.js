@@ -47,7 +47,9 @@ function Nav() {
         <Link href="/projects">
           <a
             className={`${
-              currentPath === "/projects" ? styles.currentPath : ""
+              currentPath === "/projects" || currentPath.includes("preview")
+                ? styles.currentPath
+                : ""
             }`}
           >
             <i>

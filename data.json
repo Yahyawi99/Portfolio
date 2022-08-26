@@ -5,11 +5,15 @@
     "github": "https://github.com/Yahyawi99/Product-Feedback",
     "live": "https://product-feedback-yahyawi.herokuapp.com/",
     "images": {
-      "screenshot": "/assets/images/product-feedback/product-feedback.png",
       "logo": "/assets/images/product-feedback/product-feedback-logo.png",
       "preview": "/assets/images/product-feedback/screenshot.png"
     },
-    "languages": ["HTML/CSS/JS", "REACT", "NodeJs/EXPRESS", "MONGODB"]
+    "languages": ["HTML/CSS/JS", "REACT", "NodeJs/EXPRESS", "MONGODB"],
+    "screenshots": {
+      "first": "/assets/images/product-feedback/product-feedback.png",
+      "second": "/assets/images/product-feedback/product-feedback-2.png",
+      "third": "/assets/images/product-feedback/product-feedback-3.png"
+    }
   },
   {
     "_id": "6307907c8a098b92f40ca736",
@@ -18,10 +22,13 @@
     "live": "https://audiophile-yahyawi.herokuapp.com/",
     "languages": ["HTML/CSS/JS", "REACT", "NEXT"],
     "images": {
-      "screenshot": "/assets/images/audiophile/audiphile.png",
       "preview": "/assets/images/audiophile/screenshot.png",
-      "logo": "/assets/images/audiophile/audiophile-logo.png",
-      "logo_2": "/assets/images/audiophile/audiophile-logo-2.svg"
+      "logo": "/assets/images/audiophile/audiophile-logo.png"
+    },
+    "screenshots": {
+      "first": "\n/assets/images/audiophile/audiphile.png\n",
+      "second": "\n/assets/images/audiophile/audiphile-2.png",
+      "third": "\n/assets/images/audiophile/audiphile-3.png\n"
     }
   },
   {
@@ -31,9 +38,13 @@
     "live": "https://designo-yahyawi.herokuapp.com/",
     "languages": ["HTML/CSS/JS", "REACT"],
     "images": {
-      "screenshot": "/assets/images/designo/designo.png",
       "preview": "/assets/images/designo/screenshot.png",
       "logo": "/assets/images/designo/designo-logo.png"
+    },
+    "screenshots": {
+      "first": "/assets/images/designo/designo.png",
+      "second": "/assets/images/designo/designo-2.png",
+      "third": "/assets/images/designo/designo-3.png"
     }
   },
   {
@@ -43,9 +54,13 @@
     "live": "https://audiophile-yahyawi.herokuapp.com/",
     "languages": ["HTML/CSS/JS", "REACT", "STYLED COMPONENTS"],
     "images": {
-      "screenshot": "/assets/images/weather/weather-app.png",
       "preview": "/assets/images/weather/screenshot.png",
       "logo": "/assets/images/weather/weather-app-logo.png"
+    },
+    "screenshots": {
+      "first": "/assets/images/weather/weather-app.png",
+      "second": "/assets/images/weather/weather-app-2.png",
+      "third": "/assets/images/weather/weather-app-3.png"
     }
   },
   {
@@ -55,9 +70,29 @@
     "live": "https://invoice-app-flax.vercel.app/",
     "languages": ["HTML/CSS/JS", "REACT", "NEXT"],
     "images": {
-      "screenshot": "/assets/images/invoice/invoice-app.png",
       "preview": "/assets/images/invoice/screenshot.png",
       "logo": "/assets/images/invoice/invoice-logo.svg"
+    },
+    "screenshots": {
+      "first": "/assets/images/invoice/invoice-app.png",
+      "second": "/assets/images/invoice/invoice-app-2.png",
+      "third": "/assets/images/invoice/invoice-app-3.png"
+    }
+  },
+  {
+    "_id": "6308d36fbb07dddda047e4e8",
+    "name": "Entertainment App",
+    "github": "https://github.com/Yahyawi99/Entertainment-app",
+    "live": "https://entertainment-app-ebon.vercel.app/",
+    "languages": ["HTML/CSS/JS", "REACT", "NEXT"],
+    "images": {
+      "logo": "/assets/images/entertainment/entertainment-logo.svg",
+      "preview": "/assets/images/entertainment/screenshot.png"
+    },
+    "screenshots": {
+      "first": "/assets/images/entertainment/entertainment.png",
+      "second": "/assets/images/entertainment/entertainment-2.png",
+      "third": "/assets/images/entertainment/entertainment-3.png"
     }
   }
 ]

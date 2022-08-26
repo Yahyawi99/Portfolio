@@ -2,98 +2,19 @@ import React, { useEffect, useRef } from "react";
 import axios from "axios";
 import Image from "next/image";
 import Link from "next/link";
+import { useGlobal } from "../../context";
 // css
 import styles from "../../styles/projects/projects.module.css";
 
 function Projects(props) {
+  const { projectHoverEffect } = useGlobal();
   const { AllProjects } = props;
   const ProjectsRef = useRef(null);
 
   useEffect(() => {
     const myProjects = [...ProjectsRef.current.children];
 
-    myProjects.forEach((e) => {
-      const layer = e.children[1];
-
-      e.addEventListener("mouseenter", (e) => {
-        if (e.offsetY <= 30) {
-          layer.style.display = "flex";
-          layer.style.transform = "translateY(-100%)";
-
-          setTimeout(() => {
-            layer.style.transform = "translateY(0%)";
-          }, 50);
-          return;
-        }
-
-        if (e.offsetX >= 240) {
-          layer.style.display = "flex";
-          layer.style.transform = "translateX(100%)";
-
-          setTimeout(() => {
-            layer.style.transform = "translateX(0%)";
-          }, 50);
-          return;
-        }
-
-        if (e.offsetY >= 240) {
-          layer.style.display = "flex";
-          layer.style.transform = "translateY(100%)";
-
-          setTimeout(() => {
-            layer.style.transform = "translateY(0%)";
-          }, 50);
-          return;
-        }
-
-        if (e.offsetX <= 30) {
-          layer.style.display = "flex";
-          layer.style.transform = "translateX(-100%)";
-
-          setTimeout(() => {
-            layer.style.transform = "translateX(0%)";
-          }, 50);
-          return;
-        }
-      });
-
-      e.addEventListener("mouseleave", (e) => {
-        if (e.offsetY <= 30) {
-          layer.style.transform = "translateY(-100%)";
-
-          setTimeout(() => {
-            layer.style.display = "none";
-          }, 250);
-          return;
-        }
-
-        if (e.offsetX >= 240) {
-          layer.style.transform = "translateX(100%)";
-
-          setTimeout(() => {
-            layer.style.display = "none";
-          }, 250);
-          return;
-        }
-
-        if (e.offsetY >= 240) {
-          layer.style.transform = "translateY(100%)";
-
-          setTimeout(() => {
-            layer.style.display = "none";
-          }, 250);
-          return;
-        }
-
-        if (e.offsetX <= 30) {
-          layer.style.transform = "translateX(-100%)";
-
-          setTimeout(() => {
-            layer.style.display = "none";
-          }, 250);
-        }
-      });
-    });
+    projectHoverEffect(myProjects);
   });
 
   return (
@@ -111,7 +32,7 @@ function Projects(props) {
             const { _id, name, images } = e;
 
             return (
-              <Link key={_id} href="/">
+              <Link key={_id} href={`/preview/${_id}`}>
                 <div>
                   <Image src={images.preview} layout="fill" priority />
 
