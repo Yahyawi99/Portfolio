@@ -5,11 +5,11 @@ import { useGlobal } from "../../context";
 import styles from "../../styles/shared/nav.module.css";
 
 function Nav() {
-  const { nav, currentPath } = useGlobal();
+  const { nav, setNav, currentPath } = useGlobal();
 
   return (
     <section className={`${styles.container} ${nav ? styles.openNav : ""}`}>
-      <div>
+      <div onClick={() => setNav(false)}>
         <Link href="/">
           <a className={`${currentPath === "/" ? styles.currentPath : ""}`}>
             <i>
