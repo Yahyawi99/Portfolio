@@ -6,13 +6,10 @@ import styles from "../../styles/projects/projects.module.css";
 
 const Projects = (props) => {
   const { AllProjects } = props;
-
-  console.log(AllProjects);
-
   return (
     <section className={styles.container}>
       <div>
-        <h2>WORKS</h2>
+        <h2>WORK</h2>
         <h2>
           MY <span>PROJECTS</span>
         </h2>
@@ -21,8 +18,11 @@ const Projects = (props) => {
       <div>
         {AllProjects.map((e) => {
           const { _id, name, images } = e;
+
           return (
             <div kay={_id}>
+              <Image src={images.preview} layout="fill" />
+
               <div className={styles.layer}>
                 <img src={images.logo} alt="logo" />
 
@@ -38,7 +38,7 @@ const Projects = (props) => {
 
 /*************/
 // SSR
-export const getStaticProps = async () => {
+export const getServerSideProps = async () => {
   const res = await axios(`${process.env.BASE_URL}/api/projects`);
 
   return {

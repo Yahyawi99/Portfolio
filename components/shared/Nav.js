@@ -26,8 +26,10 @@ function Nav() {
           </a>
         </Link>
 
-        <Link href="/">
-          <a>
+        <Link href="/about">
+          <a
+            className={`${currentPath === "/about" ? styles.currentPath : ""}`}
+          >
             <i>
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -43,7 +45,11 @@ function Nav() {
         </Link>
 
         <Link href="/projects">
-          <a>
+          <a
+            className={`${
+              currentPath === "/projects" ? styles.currentPath : ""
+            }`}
+          >
             <i>
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -58,8 +64,12 @@ function Nav() {
           </a>
         </Link>
 
-        <Link href="/">
-          <a>
+        <Link href="/challenges">
+          <a
+            className={`${
+              currentPath === "/challenges" ? styles.currentPath : ""
+            }`}
+          >
             <i>
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -74,8 +84,12 @@ function Nav() {
           </a>
         </Link>
 
-        <Link href="/">
-          <a>
+        <Link href="/contact">
+          <a
+            className={`${
+              currentPath === "/contact" ? styles.currentPath : ""
+            }`}
+          >
             <i>
               <svg
                 xmlns="http://www.w3.org/2000/svg"
