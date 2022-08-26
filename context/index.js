@@ -99,6 +99,10 @@ function Provider({ children }) {
     });
   };
 
+  // Slider
+  const slider = (direction) => {
+    console.log(direction);
+  };
   return (
     <AppContext.Provider
       value={{
@@ -106,6 +110,7 @@ function Provider({ children }) {
         setNav,
         currentPath,
         projectHoverEffect,
+        slider,
       }}
     >
       {children}
@@ -113,8 +118,8 @@ function Provider({ children }) {
   );
 }
 
-export function useGlobal() {
+export const useGlobal = () => {
   return useContext(AppContext);
-}
+};
 
 export default Provider;

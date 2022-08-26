@@ -1,14 +1,16 @@
 import React from "react";
 import Image from "next/image";
+import { useGlobal } from "../../context";
 // css
 import styles from "../../styles/preview/silder.module.css";
 
 function Slider({ project }) {
-  console.log(project);
+  const { slider } = useGlobal();
+
   return (
     <section className={styles.container}>
       {/* Left Arrow */}
-      <button>
+      <button onClick={() => slider("left")}>
         <svg
           xmlns="http://www.w3.org/2000/svg"
           width="24"
@@ -45,7 +47,7 @@ function Slider({ project }) {
       </div>
 
       {/* Right Arrow */}
-      <button>
+      <button onClick={() => slider("right")}>
         <svg
           xmlns="http://www.w3.org/2000/svg"
           width="24"
