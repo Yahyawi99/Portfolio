@@ -26,7 +26,6 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 50px;
 }
 
 /* Style scroll bar */
@@ -50,7 +49,7 @@
 /* ***************************** */
 /* ***************************** */
 /* Media query */
-@media screen and (max-width:1024px) {
+@media screen and (max-width:1200px) {
     .main {
         padding: 0px 10px;
     }

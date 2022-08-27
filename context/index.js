@@ -24,6 +24,8 @@ function Provider({ children }) {
     myProjects.forEach((e) => {
       const layer = e.children[1];
 
+      // window.addEventListener("mou")
+
       e.addEventListener("mouseenter", (e) => {
         if (e.offsetY <= 30) {
           layer.style.display = "flex";
