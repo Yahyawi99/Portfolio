@@ -28,8 +28,6 @@ function Intro() {
       <Link href="/">
         <button>
           <p>GET IN TOUCH</p>
-
-          <div className={styles.layer}></div>
         </button>
       </Link>
     </section>

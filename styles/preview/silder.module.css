@@ -53,6 +53,8 @@
 /* Mobile Button */
 .mobileBtns {
     display: none;
+    position: relative;
+    z-index: 0;
 }
 
 
