@@ -1,0 +1,41 @@
+.container {
+    padding: 400px 0 0 0;
+}
+
+.backBtn {
+    width: 95%;
+    max-width: 1000px;
+    margin-bottom: 75px;
+}
+
+.backBtn>button {
+    width: 100%;
+    max-width: 175px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    color: var(--clr-light-1);
+    background-color: var(--clr-light-2);
+    font-size: 1rem;
+    cursor: pointer;
+    border: 2px solid transparent;
+    transition: .25s;
+    padding: 10px 0;
+}
+
+.backBtn svg {
+    width: 25px;
+    fill: var(--clr-light-1);
+    transition: .25s;
+}
+
+.backBtn>button:hover {
+    color: var(--clr-light-2);
+    background-color: transparent;
+    border: 2px solid var(--clr-light-2);
+}
+
+.backBtn>button:hover svg {
+    fill: var(--clr-light-2);
+}
