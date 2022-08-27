@@ -51,7 +51,7 @@ function Slider({ project }) {
                   opacity: 0,
                 }}
               >
-                <Image src={second} layout="fill" alt="screenshot" />;
+                <Image src={second} layout="fill" alt="screenshot" priority />;
               </div>
 
               <div
@@ -61,7 +61,7 @@ function Slider({ project }) {
                   opacity: 0,
                 }}
               >
-                <Image src={third} layout="fill" alt="screenshot" />;
+                <Image src={third} layout="fill" alt="screenshot" priority />;
               </div>
             </div>
           );
