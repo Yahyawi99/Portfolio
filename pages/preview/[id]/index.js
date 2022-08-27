@@ -2,6 +2,7 @@ import React from "react";
 import axios from "axios";
 // components
 import Slider from "../../../components/preview/Slider";
+import Details from "../../../components/preview/Details";
 
 function Preview(props) {
   const { project } = props;
@@ -9,6 +10,8 @@ function Preview(props) {
   return (
     <section>
       <Slider project={project} />
+
+      <Details project={project} />
     </section>
   );
 }
