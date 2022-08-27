@@ -1,10 +1,10 @@
 .container {
     width: 100%;
+    max-width: 1100px;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
-    gap: 50px;
-    padding: 0px 50px;
+    padding: 0px 10px;
 }
 
 
@@ -31,28 +31,103 @@
 /* Images */
 .container>div {
     width: 100%;
-    max-width: 750px;
+    max-width: 700px;
 }
 
 .imageContainer {
     width: 100%;
-    height: 350px;
+    height: 325px;
     display: flex;
     position: relative;
-    overflow: hidden;
 }
 
 .imageContainer>div {
     width: 100%;
     height: 100%;
     position: absolute;
-    left: 0;
+    transition: .75s;
+    border-radius: 10px;
+    overflow: hidden;
 }
 
-.imageContainer>div:nth-child(2) {
-    left: 100%;
+/* Mobile Button */
+.mobileBtns {
+    display: none;
 }
 
-.imageContainer>div:nth-child(3) {
-    left: 200%;
+
+/* ****************************** */
+/* ****************************** */
+/* Media Query */
+@media screen and (max-width:950px) {
+    .container {
+        padding: 25px 10px;
+    }
+}
+
+@media screen and (min-width : 0px) and (max-width:768px) {
+    .container {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    /* Icons */
+    .container>button {
+        display: none;
+    }
+
+    /* Mobile Button */
+    .mobileBtns {
+        display: flex;
+        justify-content: center;
+        gap: 150px;
+    }
+
+    /* Images */
+    .container>div {
+        width: 95%;
+        max-width: 500px;
+    }
+
+    .imageContainer {
+        height: 250px;
+    }
+
+    .imageContainer>div {
+        transform: scale(1);
+    }
+}
+
+@media screen and (min-width : 0px) and (max-width:500px) {
+
+    /* Mobile Button */
+    .mobileBtns {
+        gap: 75px;
+    }
+
+    /* Buttons */
+    .container button {
+        width: 20px;
+        height: 20px;
+    }
+
+    /* Images */
+    .container>div {
+        width: 95%;
+        max-width: 300px;
+    }
+
+    .imageContainer {
+        height: 140px;
+    }
+
+    .imageContainer>div {
+        border-radius: 5px;
+    }
+}
+
+@media screen and (min-width:1250px) {
+    .imageContainer>div {
+        transform: scale(1.25);
+    }
 }

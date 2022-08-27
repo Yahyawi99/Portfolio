@@ -12,9 +12,7 @@ function Projects(props) {
   const ProjectsRef = useRef(null);
 
   useEffect(() => {
-    const myProjects = [...ProjectsRef.current.children];
-
-    projectHoverEffect(myProjects);
+    projectHoverEffect(ProjectsRef.current);
   });
 
   return (

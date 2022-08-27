@@ -26,9 +26,9 @@
       "logo": "/assets/images/audiophile/audiophile-logo.png"
     },
     "screenshots": {
-      "first": "\n/assets/images/audiophile/audiphile.png\n",
-      "second": "\n/assets/images/audiophile/audiphile-2.png",
-      "third": "\n/assets/images/audiophile/audiphile-3.png\n"
+      "first": "/assets/images/audiophile/audiophile.png",
+      "second": "/assets/images/audiophile/audiophile-2.png",
+      "third": "/assets/images/audiophile/audiophile-3.png"
     }
   },
   {

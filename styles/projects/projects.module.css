@@ -81,3 +81,29 @@
 .projectsContainer>div:nth-child(3) img {
     max-width: 150px;
 }
+
+/* ****************************** */
+/* ****************************** */
+/* Media Query */
+@media screen and (max-width:500px) {
+
+    /* Title */
+    .container>div:nth-child(1) h2:nth-child(1) {
+        font-size: 3rem;
+    }
+
+    .container>div:nth-child(1) h2:nth-child(2) {
+        font-size: 2.75rem;
+        line-height: 40px;
+    }
+
+    /* Projects */
+    .projectsContainer {
+        padding: 75px 5px;
+    }
+
+    .projectsContainer>div {
+        width: 95%;
+        max-width: 300px;
+    }
+}

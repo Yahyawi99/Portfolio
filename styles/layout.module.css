@@ -16,8 +16,16 @@
     display: none;
 }
 
+/* middle section */
 .main>section:nth-child(3) {
     width: 100%;
+}
+
+.main>section:nth-child(3)>section {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 /* Style scroll bar */
