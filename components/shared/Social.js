@@ -1,13 +1,6 @@
 import React from "react";
 import Image from "next/image";
 import Link from "next/link";
-// icons
-import {
-  FaGithubAlt,
-  FaTwitter,
-  FaLinkedinIn,
-  FaFacebookF,
-} from "react-icons/fa";
 // css
 import styles from "../../styles/shared/social.module.css";
 
