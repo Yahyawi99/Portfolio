@@ -2,7 +2,7 @@
     width: 95%;
     max-width: 1000px;
     color: var(--clr-light-1);
-    margin: 50px 0;
+    margin: 125px 0 50px 0;
 }
 
 .container>div {
@@ -32,7 +32,7 @@
     width: 100%;
     display: flex;
     justify-content: space-between;
-    gap: 10px;
+    gap: 20px;
     flex-wrap: wrap;
     margin: 10px 0;
 }
@@ -40,7 +40,8 @@
 .container>div>div>span {
     min-width: 150px;
     display: flex;
-    gap: 15px;
+    flex-wrap: wrap;
+    gap: 10px;
 }
 
 .container>div>div>span>p:nth-child(1) {
