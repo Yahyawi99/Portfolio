@@ -133,3 +133,17 @@
         transform: scale(1.25);
     }
 }
+
+@media screen and (min-width:400px) and (max-width:500px) {
+    .container {
+        margin: 25px 0;
+    }
+
+    .imageContainer>div {
+        transform: scale(1.3);
+    }
+
+    .mobileBtns {
+        margin-top: 20px;
+    }
+}
