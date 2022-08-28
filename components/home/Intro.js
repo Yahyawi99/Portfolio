@@ -25,7 +25,7 @@ function Intro() {
         exceptional digital experiences.
       </p>
 
-      <Link href="/">
+      <Link href="/contact">
         <button>
           <p>GET IN TOUCH</p>
         </button>

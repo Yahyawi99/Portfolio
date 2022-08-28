@@ -42,12 +42,6 @@
 /* ****************************** */
 /* ****************************** */
 /* Media Query */
-@media screen and (min-width:950px) {
-    .container {
-        padding: 400px 0 0 0;
-    }
-}
-
 @media screen and (max-width:950px) {
     .container {
         padding: 50px 0;
