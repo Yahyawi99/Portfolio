@@ -14,6 +14,10 @@ function Provider({ children }) {
   // changing Icons styles depending on the path
   useEffect(() => {
     setCurrentPath(asPath);
+
+    window.scrollTo({
+      top: 0,
+    });
   }, [asPath]);
 
   // *****************************************
