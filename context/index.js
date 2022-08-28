@@ -186,7 +186,7 @@ function Provider({ children }) {
 
         setFormLoader(true);
 
-        const response = await axios.post("/api/contact", data);
+        await axios.post("/api/contact", data);
 
         formSuccess();
       } catch (error) {
