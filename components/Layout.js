@@ -1,4 +1,5 @@
 import React from "react";
+import { useGlobal } from "../context";
 // components
 import Nav from "./shared/Nav";
 import Social from "./shared/Social";
@@ -7,8 +8,10 @@ import Header from "./shared/Header";
 import styles from "../styles/layout.module.css";
 
 function Layout({ children }) {
+  const { mainRef } = useGlobal();
+
   return (
-    <main className={styles.main}>
+    <main ref={mainRef} className={styles.main}>
       <Header />
 
       <Social />

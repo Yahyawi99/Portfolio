@@ -6,6 +6,7 @@
     position: relative;
     overflow-x: hidden;
     overflow-y: scroll;
+    scroll-behavior: smooth;
     backdrop-filter: blur(2px);
     padding: 0px 50px;
     margin: 0 auto;

@@ -9,13 +9,14 @@ function Provider({ children }) {
   const [currentPath, setCurrentPath] = useState("/");
 
   const SliderContainerRef = useRef(null);
+  const mainRef = useRef(null);
 
   // *****************************************
   // changing Icons styles depending on the path
   useEffect(() => {
     setCurrentPath(asPath);
 
-    window.scrollTo({
+    mainRef.current.scrollTo({
       top: 0,
     });
   }, [asPath]);
@@ -160,6 +161,7 @@ function Provider({ children }) {
         projectHoverEffect,
         slider,
         SliderContainerRef,
+        mainRef,
       }}
     >
       {children}
