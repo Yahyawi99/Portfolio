@@ -100,5 +100,20 @@
       "second": "/assets/images/entertainment/entertainment-2.png",
       "third": "/assets/images/entertainment/entertainment-3.png"
     }
+  },
+  {
+    "_id": "630bfce11d34ef926bb1571a",
+    "name": "Memory game",
+    "github": "https://github.com/Yahyawi99/Memory-game",
+    "live": "https://memory-game-yahyawi.netlify.app/",
+    "images": {
+      "logo": "/assets/images/memory/logo.svg",
+      "preview": "/assets/images/memory/screenshot.png"
+    },
+    "screenshots": {
+      "first": "/assets/images/memory/memory.png",
+      "second": "/assets/images/memory/memory-2.png",
+      "third": "/assets/images/memory/memory-3.png"
+    }
   }
 ]
