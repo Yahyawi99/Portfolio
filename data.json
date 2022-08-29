@@ -53,7 +53,7 @@
   {
     "_id": "630792ff8a098b92f40ca73a",
     "name": "Weather App",
-    "description": "This project is a cool one, this weather app uses 2 APIs one for the weather and the other one to get your location to use it when you  relode the page",
+    "description": "This project is a cool one, this weather app uses 2 APIs one for the weather and the other one to get your location to use it when you  relode the page.",
     "github": "https://github.com/Yahyawi99/weather-app",
     "live": "https://weather-app-yahyawi.herokuapp.com/",
     "languages": ["HTML/CSS/JS", "REACT", "STYLED COMPONENTS"],
@@ -103,13 +103,15 @@
   },
   {
     "_id": "630bfce11d34ef926bb1571a",
-    "name": "Memory game",
+    "name": "Memory Game",
+    "description": "This project was an excellent test for my HTML, CSS, and JS skills. In this game you can play either solo or multiplayer (up to 4 players), set the theme to use numbers or icons within the tiles and choose to play on either a 6x6 or 4x4 grid. Enjoy ;)",
     "github": "https://github.com/Yahyawi99/Memory-game",
     "live": "https://memory-game-yahyawi.netlify.app/",
     "images": {
       "logo": "/assets/images/memory/logo.svg",
       "preview": "/assets/images/memory/screenshot.png"
     },
+    "languages": ["HTML/CSS/JS"],
     "screenshots": {
       "first": "/assets/images/memory/memory.png",
       "second": "/assets/images/memory/memory-2.png",
