@@ -154,7 +154,6 @@
 
     .openNav .layer {
         background-color: var(--layer-1);
-        backdrop-filter: blur(5px);
         transition: .5s;
     }
 

@@ -50,7 +50,7 @@ function Projects(props) {
 
 /*************/
 // SSR
-export const getServerSideProps = async () => {
+export const getStaticProps = async () => {
   const res = await axios(`${process.env.BASE_URL}/api/projects`);
 
   return {

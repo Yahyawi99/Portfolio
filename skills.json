@@ -1,0 +1,62 @@
+[
+  {
+    "_id": "62bb448a4806bb230a6ce09a",
+    "name": "Html",
+    "src": "/assets/icons/Html.svg",
+    "__v": 0
+  },
+  {
+    "_id": "62bb448a4806bb230a6ce09b",
+    "name": "Css",
+    "src": "/assets/icons/css.svg",
+    "__v": 0
+  },
+  {
+    "_id": "62bb448a4806bb230a6ce09e",
+    "name": "React.js",
+    "src": "/assets/icons/react.svg",
+    "__v": 0
+  },
+  {
+    "_id": "62bb448a4806bb230a6ce09f",
+    "name": "Next.js",
+    "src": "/assets/icons/next.svg",
+    "__v": 0
+  },
+  {
+    "_id": "62bb448a4806bb230a6ce0a0",
+    "name": "Node.js",
+    "src": "/assets/icons/nodeJS.svg",
+    "__v": 0
+  },
+  {
+    "_id": "62bb448a4806bb230a6ce0a1",
+    "name": "Express.js",
+    "src": "/assets/icons/express.svg",
+    "__v": 0
+  },
+  {
+    "_id": "62bb448a4806bb230a6ce0a2",
+    "name": "MongoDb",
+    "src": "/assets/icons/mongodb.svg",
+    "__v": 0
+  },
+  {
+    "_id": "62bb448a4806bb230a6ce0a3",
+    "name": "GIT",
+    "src": "/assets/icons/git.svg",
+    "__v": 0
+  },
+  {
+    "_id": "62bb448a4806bb230a6ce09c",
+    "name": "Tailwind Css",
+    "src": "/assets/icons/tailwind-css.svg",
+    "__v": 0
+  },
+  {
+    "_id": "62bb448a4806bb230a6ce09d",
+    "name": "JavaScript",
+    "src": "/assets/icons/javascript.svg",
+    "__v": 0
+  }
+]
