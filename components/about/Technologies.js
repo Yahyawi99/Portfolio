@@ -18,7 +18,13 @@ function Technologies({ props }) {
             return (
               <div key={_id} className={styles.skill}>
                 <div>
-                  <Image src={src} width="100" height="100" />
+                  <Image
+                    src={src}
+                    width="100"
+                    height="100"
+                    layout="responsive"
+                    alt="skill"
+                  />
                 </div>
               </div>
             );

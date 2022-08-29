@@ -6,7 +6,7 @@ import Technologies from "../../components/about/Technologies";
 // css
 import styles from "../../styles/about/about.module.css";
 
-const About = (props) => {
+function About(props) {
   return (
     <section className={styles.container}>
       <div className={styles.title}>
@@ -21,7 +21,7 @@ const About = (props) => {
       <Technologies props={props} />
     </section>
   );
-};
+}
 
 // *******************
 export const getStaticProps = async () => {
