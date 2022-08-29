@@ -24,7 +24,7 @@ function About(props) {
 }
 
 // *******************
-export const getStaticProps = async () => {
+export const getServerSideProps = async () => {
   const response = await axios(`${process.env.BASE_URL}/api/skills`);
 
   return {
