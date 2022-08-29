@@ -4,9 +4,7 @@ import Link from "next/link";
 import styles from "../../styles/about/description.module.css";
 
 function Description({ props }) {
-  if (props) {
-    var { skills } = props;
-  }
+  const { skills } = props;
 
   return (
     <section className={styles.container}>

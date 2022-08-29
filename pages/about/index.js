@@ -16,9 +16,12 @@ function About(props) {
         </h2>
       </div>
 
-      <Description props={props} />
-
-      <Technologies props={props} />
+      {props && (
+        <>
+          <Description props={props} />
+          <Technologies props={props} />
+        </>
+      )}
     </section>
   );
 }

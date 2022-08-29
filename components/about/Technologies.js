@@ -4,9 +4,7 @@ import Image from "next/image";
 import styles from "../../styles/about/technologies.module.css";
 
 function Technologies({ props }) {
-  if (props) {
-    var { skills } = props;
-  }
+  const { skills } = props;
 
   return (
     <section className={styles.container}>
