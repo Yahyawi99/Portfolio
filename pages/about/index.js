@@ -26,7 +26,13 @@ const About = (props) => {
 };
 
 // *******************
-// SSR
+export const getStaticPaths = async () => {
+  return {
+    paths: [],
+    fallback: false,
+  };
+};
+
 export const getStaticProps = async () => {
   const response = await axios(`${process.env.BASE_URL}/api/skills`);
 
