@@ -24,7 +24,7 @@ function Description({ skills }) {
 
       <div className={styles.info}>
         <div>
-          <p>{skills.length} +</p>
+          <p>{skills && skills.length} +</p>
           <p>Technologies used</p>
         </div>
 

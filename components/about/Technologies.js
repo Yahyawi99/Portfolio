@@ -11,7 +11,7 @@ function Technologies({ skills }) {
       <div>
         {skills &&
           skills.map((e) => {
-            const { _id, name, src } = e;
+            const { _id, src } = e;
 
             return (
               <div key={_id} className={styles.skill}>
