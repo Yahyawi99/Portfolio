@@ -7,8 +7,6 @@ import Technologies from "../../components/about/Technologies";
 import styles from "../../styles/about/about.module.css";
 
 const About = (props) => {
-  const { skills } = props;
-
   return (
     <section className={styles.container}>
       <div className={styles.title}>
@@ -18,21 +16,14 @@ const About = (props) => {
         </h2>
       </div>
 
-      <Description skills={skills} />
+      <Description props={props} />
 
-      <Technologies skills={skills} />
+      <Technologies props={props} />
     </section>
   );
 };
 
 // *******************
-export const getStaticPaths = async () => {
-  return {
-    paths: [],
-    fallback: false,
-  };
-};
-
 export const getStaticProps = async () => {
   const response = await axios(`${process.env.BASE_URL}/api/skills`);
 

@@ -3,7 +3,9 @@ import Image from "next/image";
 // css
 import styles from "../../styles/about/technologies.module.css";
 
-function Technologies({ skills }) {
+function Technologies({ props }) {
+  const { skills } = props;
+
   return (
     <section className={styles.container}>
       <h2>Here are some technologies I've been working with recently</h2>
