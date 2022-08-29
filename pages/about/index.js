@@ -1,8 +1,8 @@
 import React from "react";
 import axios from "axios";
 // components
-// import Description from "../../components/about/Description";
-// import Technologies from "../../components/about/Technologies";
+import Description from "../../components/about/Description";
+import Technologies from "../../components/about/Technologies";
 // css
 import styles from "../../styles/about/about.module.css";
 
@@ -16,9 +16,9 @@ function About(props) {
         </h2>
       </div>
 
-      {/* <Description props={props} />
+      <Description props={props} />
 
-      <Technologies props={props} /> */}
+      <Technologies props={props} />
     </section>
   );
 }
@@ -27,7 +27,7 @@ function About(props) {
 export const getStaticProps = async () => {
   const response = await axios(`${process.env.BASE_URL}/api/skills`);
 
-  return { props: response.data };
+  return { props: response.data, fallback: false };
 };
 
 export default About;
