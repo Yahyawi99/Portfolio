@@ -3,9 +3,7 @@ import Link from "next/link";
 // css
 import styles from "../../styles/about/description.module.css";
 
-function Description({ props }) {
-  const { skills } = props;
-
+function Description({ skills }) {
   return (
     <section className={styles.container}>
       <div>
