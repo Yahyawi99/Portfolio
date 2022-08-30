@@ -2,9 +2,8 @@
   {
     "_id": "63078aec8a098b92f40ca735",
     "name": "Product Feedback",
-    "description": "This project is my portfolio star so far,and it's my first big full-stack project it's almost like a real-world app,I even used google authentication.The user can create, read, update, delete product feedback requests, and receive form validations when trying to create/edit feedback requests and a lot more.",
     "github": "https://github.com/Yahyawi99/Product-Feedback",
-    "live": "https://product-feedback-yahyawi.herokuapp.com/",
+    "live": "https://product-feedback-nu.vercel.app/",
     "images": {
       "logo": "/assets/images/product-feedback/product-feedback-logo.png",
       "preview": "/assets/images/product-feedback/screenshot.png"
@@ -14,14 +13,14 @@
       "first": "/assets/images/product-feedback/product-feedback.png",
       "second": "/assets/images/product-feedback/product-feedback-2.png",
       "third": "/assets/images/product-feedback/product-feedback-3.png"
-    }
+    },
+    "description": "This project is my portfolio star so far,and it's my first big full-stack project it's almost like a real-world app,I even used google authentication.The user can create, read, update, delete product feedback requests, and receive form validations when trying to create/edit feedback requests and a lot more."
   },
   {
     "_id": "6307907c8a098b92f40ca736",
     "name": "Audiophile",
-    "description": "This is an e-commerce website specializing in the music industry, this huge challenge really provided an incredible test to my front-end skills. You can add/remove products from the cart, edit product quantities in it, see correct checkout totals depending on the products in the cart and more.",
     "github": "https://github.com/Yahyawi99/Audiophile",
-    "live": "https://audiophile-yahyawi.herokuapp.com/",
+    "live": "https://audiophile-chi.vercel.app/",
     "languages": ["HTML/CSS/JS", "REACT", "NEXT"],
     "images": {
       "preview": "/assets/images/audiophile/screenshot.png",
@@ -31,14 +30,14 @@
       "first": "/assets/images/audiophile/audiophile.png",
       "second": "/assets/images/audiophile/audiophile-2.png",
       "third": "/assets/images/audiophile/audiophile-3.png"
-    }
+    },
+    "description": "This is an e-commerce website specializing in the music industry, this huge challenge really provided an incredible test to my front-end skills. You can add/remove products from the cart, edit product quantities in it, see correct checkout totals depending on the products in the cart and more."
   },
   {
     "_id": "630792b18a098b92f40ca739",
     "name": "Designo",
-    "description": "This one's a BIG project, 7 pages exactly and I put it on my portfolio to show off how I can build multi-page websites.",
     "github": "https://github.com/Yahyawi99/Designo-multi-page-website",
-    "live": "https://designo-yahyawi.herokuapp.com/",
+    "live": "https://designo-multi-page-website-brown.vercel.app/",
     "languages": ["HTML/CSS/JS", "REACT"],
     "images": {
       "preview": "/assets/images/designo/screenshot.png",
@@ -48,14 +47,14 @@
       "first": "/assets/images/designo/designo.png",
       "second": "/assets/images/designo/designo-2.png",
       "third": "/assets/images/designo/designo-3.png"
-    }
+    },
+    "description": "This one's a BIG project, 7 pages exactly and I put it on my portfolio to show off how I can build multi-page websites."
   },
   {
     "_id": "630792ff8a098b92f40ca73a",
     "name": "Weather App",
-    "description": "This project is a cool one, this weather app uses 2 APIs one for the weather and the other one to get your location to use it when you  relode the page.",
-    "github": "https://github.com/Yahyawi99/weather-app",
-    "live": "https://weather-app-yahyawi.herokuapp.com/",
+    "github": "https://github.com/Yahyawi99/Audiophile",
+    "live": "https://weather-app-yahyawi.vercel.app/",
     "languages": ["HTML/CSS/JS", "REACT", "STYLED COMPONENTS"],
     "images": {
       "preview": "/assets/images/weather/screenshot.png",
@@ -65,12 +64,12 @@
       "first": "/assets/images/weather/weather-app.png",
       "second": "/assets/images/weather/weather-app-2.png",
       "third": "/assets/images/weather/weather-app-3.png"
-    }
+    },
+    "description": "This project is a cool one, this weather app uses 2 APIs one for the weather and the other one to get your location to use it when you  relode the page."
   },
   {
     "_id": "630797a5b2ec32d5029dd1e1",
     "name": "Invoice App",
-    "description": "This invoicing app tested me on many levels. I worked with JSON data, managing state, plus a lot more. and it really challenged me when I was working on the form. While using the app you can create, read, update, and delete invoices, save draft invoices, mark pending invoices as paid and many other features.",
     "github": "https://github.com/Yahyawi99/Invoice-app",
     "live": "https://invoice-app-flax.vercel.app/",
     "languages": ["HTML/CSS/JS", "REACT", "NEXT"],
@@ -82,12 +81,12 @@
       "first": "/assets/images/invoice/invoice-app.png",
       "second": "/assets/images/invoice/invoice-app-2.png",
       "third": "/assets/images/invoice/invoice-app-3.png"
-    }
+    },
+    "description": "This invoicing app tested me on many levels. I worked with JSON data, managing state, plus a lot more. and it really challenged me when I was working on the form. While using the app you can create, read, update, and delete invoices, save draft invoices, mark pending invoices as paid and many other features."
   },
   {
     "_id": "6308d36fbb07dddda047e4e8",
     "name": "Entertainment App",
-    "description": "This multi-page entertainment web is one of my first next apps. You can navigate between Home, Movies, TV Series, and Bookmarked Shows pages. Add/Remove bookmarks from all movies and TV series.",
     "github": "https://github.com/Yahyawi99/Entertainment-app",
     "live": "https://entertainment-app-ebon.vercel.app/",
     "languages": ["HTML/CSS/JS", "REACT", "NEXT"],
@@ -99,23 +98,41 @@
       "first": "/assets/images/entertainment/entertainment.png",
       "second": "/assets/images/entertainment/entertainment-2.png",
       "third": "/assets/images/entertainment/entertainment-3.png"
-    }
+    },
+    "description": "This multi-page entertainment web is one of my first next apps. You can navigate between Home, Movies, TV Series, and Bookmarked Shows pages. Add/Remove bookmarks from all movies and TV series."
   },
   {
     "_id": "630bfce11d34ef926bb1571a",
     "name": "Memory Game",
-    "description": "This project was an excellent test for my HTML, CSS, and JS skills. In this game you can play either solo or multiplayer (up to 4 players), set the theme to use numbers or icons within the tiles and choose to play on either a 6x6 or 4x4 grid. Enjoy ;)",
     "github": "https://github.com/Yahyawi99/Memory-game",
-    "live": "https://memory-game-yahyawi.netlify.app/",
+    "live": "https://memory-game-yahyawi.vercel.app/",
     "images": {
       "logo": "/assets/images/memory/logo.svg",
       "preview": "/assets/images/memory/screenshot.png"
     },
-    "languages": ["HTML/CSS/JS"],
     "screenshots": {
       "first": "/assets/images/memory/memory.png",
       "second": "/assets/images/memory/memory-2.png",
       "third": "/assets/images/memory/memory-3.png"
-    }
+    },
+    "languages": ["HTML/CSS/JS"],
+    "description": "This project was an excellent test for my HTML, CSS, and JS skills. In this game you can play either solo or multiplayer (up to 4 players), set the theme to use numbers or icons within the tiles and choose to play on either a 6x6 or 4x4 grid. Enjoy ;)"
+  },
+  {
+    "_id": "630e37d5ed1ea839e1319750",
+    "name": "Planets Facts",
+    "github": "https://github.com/Yahyawi99/Planets-Facts",
+    "live": "https://planets-facts-phi.vercel.app/",
+    "images": {
+      "preview": "/assets/images/planets/screenshot.png",
+      "logo": "/assets/images/planets/logo.svg"
+    },
+    "screenshots": {
+      "first": "/assets/images/planets/planets.png",
+      "second": "/assets/images/planets/planets.png",
+      "third": "/assets/images/planets/planets.png"
+    },
+    "languages": ["HTML/CSS/JS"],
+    "description": "This is an 8-page fact site for all planets in our solar system. This project is one of my incredible portfolio pieces! You can view each planet page and toggle between the 'Overview', 'Internal Structure', and 'Surface Geology' tabs."
   }
 ]
