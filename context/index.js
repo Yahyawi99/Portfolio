@@ -6,6 +6,7 @@ const AppContext = React.createContext();
 function Provider({ children }) {
   const { asPath } = useRouter();
 
+  const [loadingPage, setLoadingPage] = useState(true);
   const [nav, setNav] = useState(false);
   const [currentPath, setCurrentPath] = useState("/");
 
@@ -21,7 +22,7 @@ function Provider({ children }) {
   const [sentFailed, setsentFailed] = useState(false);
   const [formMessage, setFormMessage] = useState("");
 
-  // *****************************************
+  /* *************************************** */
   // changing Icons styles depending on the path
   useEffect(() => {
     setCurrentPath(asPath);
@@ -31,7 +32,7 @@ function Provider({ children }) {
     });
   }, [asPath]);
 
-  // *****************************************
+  /* *************************************** */
   // Hover effect on Project
   const projectHoverEffect = (container) => {
     const myProjects = [...container.children];
@@ -120,7 +121,7 @@ function Provider({ children }) {
     });
   };
 
-  // *****************************************
+  /* *************************************** */
   // Slider
   const slider = (direction) => {
     const container = [...SliderContainerRef.current.children];
@@ -162,7 +163,7 @@ function Provider({ children }) {
     });
   };
 
-  // *****************************************
+  /* *************************************** */
   // Form submit
   const formHandler = async (e) => {
     e.preventDefault();
@@ -279,6 +280,8 @@ function Provider({ children }) {
         sentSuccess,
         formMessage,
         sentFailed,
+        loadingPage,
+        setLoadingPage,
       }}
     >
       {children}
