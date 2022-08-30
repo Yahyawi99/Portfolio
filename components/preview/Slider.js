@@ -4,7 +4,7 @@ import { useGlobal } from "../../context";
 // css
 import styles from "../../styles/preview/silder.module.css";
 
-function Slider({ project }) {
+function Slider({ data }) {
   const { slider, SliderContainerRef } = useGlobal();
 
   return (
@@ -22,7 +22,7 @@ function Slider({ project }) {
       </button>
 
       <div>
-        {project.map((elem) => {
+        {data.map((elem) => {
           const {
             _id,
             screenshots: { first, second, third },

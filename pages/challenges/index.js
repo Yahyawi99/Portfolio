@@ -31,7 +31,7 @@ function Challenges(props) {
             const { _id, name, images } = e;
 
             return (
-              <Link key={_id} href={`/preview/${_id}`}>
+              <Link key={_id} href={`/preview/${_id}/?type=challenge`}>
                 <div>
                   <Image src={images.preview} layout="fill" priority />
 

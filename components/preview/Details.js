@@ -3,10 +3,10 @@ import Link from "next/link";
 // css
 import styles from "../../styles/preview/details.module.css";
 
-function Details({ project }) {
+function Details({ data }) {
   return (
     <section className={styles.container}>
-      {project.map((e) => {
+      {data.map((e) => {
         const { _id, name, description, languages, github, live } = e;
 
         return (

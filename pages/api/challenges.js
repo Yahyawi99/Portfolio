@@ -14,6 +14,7 @@ const getChallenges = async (req, res) => {
       .json({ AllChallenges, hits: AllChallenges.length });
   } catch (error) {
     console.log(error);
+    res.send();
   }
 };
 

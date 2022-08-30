@@ -7,7 +7,7 @@ import Details from "../../../components/preview/Details";
 import styles from "../../../styles/preview/preview.module.css";
 
 function Preview(props) {
-  const { project } = props;
+  const { data } = props;
 
   return (
     <section className={styles.container}>
@@ -31,9 +31,9 @@ function Preview(props) {
         </button>
       </div>
 
-      <Slider project={project} />
+      <Slider data={data} />
 
-      <Details project={project} />
+      <Details data={data} />
     </section>
   );
 }
@@ -43,14 +43,15 @@ function Preview(props) {
 export const getServerSideProps = async (context) => {
   const {
     params: { id },
+    query: { type },
   } = context;
 
   const response = await axios(
-    `${process.env.BASE_URL}/api/single-project/${id}`
+    `${process.env.BASE_URL}/api/single-${type}/${id}`
   );
 
   return {
-    props: response.data,
+    props: { data: response.data[type] },
   };
 };
 
