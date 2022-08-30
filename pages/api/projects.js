@@ -5,7 +5,7 @@ import Projects from "../../models/Projects";
 
 import AllProjects from "../../data.json";
 
-async function getProjects(req, res) {
+const getProjects = async (req, res) => {
   try {
     // await connectMongo();
 
@@ -15,6 +15,6 @@ async function getProjects(req, res) {
   } catch (error) {
     console.log(error);
   }
-}
+};
 
 export default getProjects;

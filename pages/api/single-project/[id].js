@@ -5,7 +5,7 @@ import Projects from "../../../models/Projects";
 
 import AllProjects from "../../../data.json";
 
-async function getSingleProject(req, res) {
+const getSingleProject = async (req, res) => {
   try {
     const { id } = req.query;
 
@@ -22,6 +22,6 @@ async function getSingleProject(req, res) {
     console.log(error);
     res.send();
   }
-}
+};
 
 export default getSingleProject;
