@@ -36,7 +36,11 @@ function Challenges(props) {
                   <Image src={images.preview} layout="fill" priority />
 
                   <div className={styles.layer}>
-                    <img src={images.logo} alt="logo" />
+                    <img
+                      src={images.logo}
+                      alt="logo"
+                      className={styles.challengesIcon}
+                    />
 
                     <h2>{name}</h2>
                   </div>

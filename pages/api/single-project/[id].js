@@ -3,19 +3,19 @@ import { StatusCodes } from "http-status-codes";
 import connectMongo from "../../../utils/connectDB";
 import Projects from "../../../models/Projects";
 
-import AllProjects from "../../../data.json";
+// import AllProjects from "../../../data.json";
 
 const getSingleProject = async (req, res) => {
   try {
     const { id } = req.query;
 
-    // await connectMongo();
+    await connectMongo();
 
-    // let project = await Projects.find();
+    let project = await Projects.find();
 
-    // project = project.filter((e) => e._id.toHexString() === id);
+    project = project.filter((e) => e._id.toHexString() === id);
 
-    const project = AllProjects.filter((e) => e._id === id);
+    // const project = AllProjects.filter((e) => e._id === id);
 
     res.status(StatusCodes.OK).json({ project, success: true });
   } catch (error) {
