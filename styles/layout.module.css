@@ -44,6 +44,10 @@
     width: 5px;
 }
 
+/* Stop Scrolling */
+.stopScroll {
+    overflow: hidden;
+}
 
 
 /* ***************************** */

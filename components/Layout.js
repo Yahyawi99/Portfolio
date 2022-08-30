@@ -8,10 +8,13 @@ import Header from "./shared/Header";
 import styles from "../styles/layout.module.css";
 
 function Layout({ children }) {
-  const { mainRef } = useGlobal();
+  const { mainRef, nav } = useGlobal();
 
   return (
-    <main ref={mainRef} className={styles.main}>
+    <main
+      ref={mainRef}
+      className={`${styles.main} ${nav && styles.stopScroll}`}
+    >
       <Header />
 
       <Social />

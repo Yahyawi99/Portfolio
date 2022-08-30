@@ -107,7 +107,7 @@ function Nav() {
         </Link>
       </div>
 
-      <div className={styles.layer}></div>
+      <div className={styles.layer} onClick={() => setNav(false)}></div>
     </section>
   );
 }
