@@ -67,7 +67,7 @@ function Challenges(props) {
 }
 
 /*************/
-export const getStaticProps = async () => {
+export const getServerSideProps = async () => {
   const res = await axios(`${process.env.BASE_URL}/api/challenges`);
 
   return {
