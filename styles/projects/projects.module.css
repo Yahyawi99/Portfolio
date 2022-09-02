@@ -16,6 +16,9 @@
     align-items: center;
     font-family: 'Fredoka One', cursive;
     position: relative;
+    opacity: 0;
+    transform: translateY(100px);
+    transition: 1s;
 }
 
 .container>div:nth-child(1) h2:nth-child(1) {
@@ -46,6 +49,10 @@
     justify-content: center;
     flex-wrap: wrap;
     gap: 20px;
+    opacity: 0;
+    transform: translateY(100px);
+    transition: 1s;
+    transition-delay: .5s;
     padding: 75px 50px;
 }
 

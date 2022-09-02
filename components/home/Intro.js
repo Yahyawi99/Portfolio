@@ -1,22 +1,86 @@
 import React from "react";
 import Link from "next/link";
+import { motion } from "framer-motion";
+import { useGlobal } from "../../context";
 // css
 import styles from "../../styles/home/intro.module.css";
 
 function Intro() {
+  const { asPath } = useGlobal();
+
   return (
-    <section className={styles.container}>
+    <motion.section
+      key={asPath}
+      animate={{
+        translateY: 0,
+        opacity: 1,
+      }}
+      className={styles.container}
+    >
       <p>Hi, my name is</p>
 
       <div>
-        <h2>
-          Yassin Yahyawi.
-          <div className={styles.blinker}></div>
-        </h2>
-        <h2>
-          I build things for the web.
-          <div className={styles.blinker}></div>
-        </h2>
+        <div>
+          <motion.h2
+            animate={{
+              scaleX: 1,
+            }}
+          >
+            Yassin
+          </motion.h2>
+          <motion.h2
+            animate={{
+              scaleX: 1,
+            }}
+          >
+            Yahyawi.
+          </motion.h2>
+        </div>
+
+        <div>
+          <motion.h2
+            animate={{
+              scaleX: 1,
+            }}
+          >
+            I{" "}
+          </motion.h2>
+          <motion.h2
+            animate={{
+              scaleX: 1,
+            }}
+          >
+            build{" "}
+          </motion.h2>
+          <motion.h2
+            animate={{
+              scaleX: 1,
+            }}
+          >
+            things{" "}
+          </motion.h2>
+          <motion.h2
+            animate={{
+              scaleX: 1,
+            }}
+          >
+            for{" "}
+          </motion.h2>
+          <motion.h2
+            animate={{
+              scaleX: 1,
+            }}
+          >
+            the{" "}
+          </motion.h2>
+          <motion.h2
+            animate={{
+              scaleX: 1,
+            }}
+          >
+            web.
+          </motion.h2>
+        </div>
       </div>
 
       <p className={styles.paragraph}>
@@ -30,7 +94,7 @@ function Intro() {
           <p>GET IN TOUCH</p>
         </button>
       </Link>
-    </section>
+    </motion.section>
   );
 }
 

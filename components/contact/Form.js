@@ -31,7 +31,7 @@ function Form() {
       noValidate
     >
       <div>
-        <label htmlFor="name">Name</label>
+        <label htmlFor="name">Full Name</label>
         <input
           type="text"
           name="name"

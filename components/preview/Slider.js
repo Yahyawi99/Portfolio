@@ -1,6 +1,7 @@
 import React from "react";
 import Image from "next/image";
 import { useGlobal } from "../../context";
+import { motion } from "framer-motion";
 // css
 import styles from "../../styles/preview/silder.module.css";
 
@@ -8,7 +9,13 @@ function Slider({ data }) {
   const { slider, SliderContainerRef } = useGlobal();
 
   return (
-    <section className={styles.container}>
+    <motion.section
+      className={styles.container}
+      animate={{
+        translateY: 0,
+        opacity: 1,
+      }}
+    >
       {/* Left Arrow */}
       <button onClick={() => slider("left")}>
         <svg
@@ -104,7 +111,7 @@ function Slider({ data }) {
           </svg>
         </button>
       </div>
-    </section>
+    </motion.section>
   );
 }
 

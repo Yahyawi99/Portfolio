@@ -30,7 +30,16 @@ function Provider({ children }) {
     mainRef.current.scrollTo({
       top: 0,
     });
+
+    setLoadingPage(false);
   }, [asPath]);
+
+  // scroll to top every time you open the nav bar
+  useEffect(() => {
+    mainRef.current.scrollTo({
+      top: 0,
+    });
+  }, [nav]);
 
   /* *************************************** */
   // Hover effect on Project

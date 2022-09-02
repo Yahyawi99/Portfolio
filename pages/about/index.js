@@ -1,5 +1,6 @@
 import React from "react";
 import axios from "axios";
+import { motion } from "framer-motion";
 // components
 import Description from "../../components/about/Description";
 import Technologies from "../../components/about/Technologies";
@@ -11,12 +12,18 @@ function About(props) {
 
   return (
     <section className={styles.container}>
-      <div className={styles.title}>
+      <motion.div
+        className={styles.title}
+        animate={{
+          translateY: 0,
+          opacity: 1,
+        }}
+      >
         <h2>PROFILE</h2>
         <h2>
           ABOUT <span>ME</span>
         </h2>
-      </div>
+      </motion.div>
 
       <Description skills={skills} />
 

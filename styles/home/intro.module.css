@@ -9,9 +9,17 @@
     color: var(--clr-light-3);
     font-weight: 300;
     font-size: 1.25rem;
+    transform: translateY(100px);
+    transition: 1s;
+    opacity: 0;
     margin: 0% auto 0 150px;
 }
 
+.container>div:nth-child(2)>div {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
 
 .container h2 {
     color: var(--clr-light-2);
@@ -19,11 +27,46 @@
     position: relative;
     line-height: 60px;
     letter-spacing: 1px;
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: .5s;
+    transition-property: transform;
 }
 
-.container .blinker {
-    position: absolute;
+/* name */
+.container>div:nth-child(2)>div:nth-child(1)>h2:nth-child(1) {
+    transition-delay: 1s;
 }
+
+.container>div:nth-child(2)>div:nth-child(1)>h2:nth-child(2) {
+    transition-delay: 1.25s;
+}
+
+/* Ibulid thing text */
+.container>div:nth-child(2)>div:nth-child(2)>h2:nth-child(1) {
+    transition-delay: 1.5s;
+}
+
+.container>div:nth-child(2)>div:nth-child(2)>h2:nth-child(2) {
+    transition-delay: 1.75s;
+}
+
+.container>div:nth-child(2)>div:nth-child(2)>h2:nth-child(3) {
+    transition-delay: 2s;
+}
+
+.container>div:nth-child(2)>div:nth-child(2)>h2:nth-child(4) {
+    transition-delay: 2.25s;
+}
+
+.container>div:nth-child(2)>div:nth-child(2)>h2:nth-child(5) {
+    transition-delay: 2.5s;
+}
+
+.container>div:nth-child(2)>div:nth-child(2)>h2:nth-child(6) {
+    transition-delay: 2.75s;
+}
+
 
 .paragraph {
     width: 95%;
@@ -79,6 +122,10 @@
         text-align: center;
         font-size: 95%;
         margin: 0% auto 0px 0px;
+    }
+
+    .container>div:nth-child(2)>div {
+        justify-content: center;
     }
 
     .container h2 {

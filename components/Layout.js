@@ -4,22 +4,27 @@ import { useGlobal } from "../context";
 import Nav from "./shared/Nav";
 import Social from "./shared/Social";
 import Header from "./shared/Header";
+import Loader from "./shared/Loader";
 // css
 import styles from "../styles/layout.module.css";
 
 function Layout({ children }) {
-  const { mainRef, nav } = useGlobal();
+  const { mainRef, nav, loadingPage } = useGlobal();
 
   return (
     <main
       ref={mainRef}
-      className={`${styles.main} ${nav && styles.stopScroll}`}
+      className={`${styles.main} ${nav && styles.stopScroll} ${
+        loadingPage && styles.pageIsLoading
+      }`}
     >
       <Header />
 
       <Social />
       <section>{children}</section>
       <Nav />
+
+      <Loader />
     </main>
   );
 }

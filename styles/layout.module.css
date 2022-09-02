@@ -6,7 +6,6 @@
     position: relative;
     overflow-x: hidden;
     overflow-y: scroll;
-    scroll-behavior: smooth;
     backdrop-filter: blur(2px);
     padding: 0px 50px;
     margin: 0 auto;
@@ -14,6 +13,12 @@
 
 .main>header {
     display: none;
+}
+
+/* Hide loading */
+.main>section:last-child {
+    transform: scaleY(0);
+    transition: .5s;
 }
 
 /* middle section */
@@ -45,8 +50,15 @@
 }
 
 /* Stop Scrolling */
-.stopScroll {
+.stopScroll,
+.pageIsLoading {
     overflow: hidden;
+}
+
+/* Loading */
+.pageIsLoading>section:last-child {
+    transform: scaleY(1);
+    transition: 0s;
 }
 
 

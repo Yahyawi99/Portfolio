@@ -5,13 +5,16 @@ import { useGlobal } from "../../context";
 import styles from "../../styles/shared/nav.module.css";
 
 function Nav() {
-  const { nav, setNav, currentPath } = useGlobal();
+  const { nav, setNav, currentPath, setLoadingPage } = useGlobal();
 
   return (
     <section className={`${styles.container} ${nav ? styles.openNav : ""}`}>
       <div onClick={() => setNav(false)}>
         <Link href="/">
-          <a className={`${currentPath === "/" ? styles.currentPath : ""}`}>
+          <a
+            className={`${currentPath === "/" ? styles.currentPath : ""}`}
+            onClick={() => setLoadingPage(true)}
+          >
             <i>
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -29,6 +32,7 @@ function Nav() {
         <Link href="/about">
           <a
             className={`${currentPath === "/about" ? styles.currentPath : ""}`}
+            onClick={() => setLoadingPage(true)}
           >
             <i>
               <svg
@@ -51,6 +55,7 @@ function Nav() {
                 ? styles.currentPath
                 : ""
             }`}
+            onClick={() => setLoadingPage(true)}
           >
             <i>
               <svg
@@ -71,6 +76,7 @@ function Nav() {
             className={`${
               currentPath === "/challenges" ? styles.currentPath : ""
             }`}
+            onClick={() => setLoadingPage(true)}
           >
             <i>
               <svg
@@ -91,6 +97,7 @@ function Nav() {
             className={`${
               currentPath === "/contact" ? styles.currentPath : ""
             }`}
+            onClick={() => setLoadingPage(true)}
           >
             <i>
               <svg

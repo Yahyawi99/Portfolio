@@ -16,6 +16,9 @@
     align-items: center;
     font-family: 'Fredoka One', cursive;
     position: relative;
+    opacity: 0;
+    transform: translateY(100px);
+    transition: 1s;
     margin-bottom: 100px;
 }
 
@@ -38,4 +41,13 @@
 
 .container>div:nth-child(1) h2:nth-child(2) span {
     color: var(--clr-light-4);
+}
+
+
+/* Section */
+.container>section {
+    opacity: 0;
+    transform: translateY(100px);
+    transition: 1s;
+    transition-delay: .5s;
 }

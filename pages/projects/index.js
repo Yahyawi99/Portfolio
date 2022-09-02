@@ -3,11 +3,12 @@ import axios from "axios";
 import Image from "next/image";
 import Link from "next/link";
 import { useGlobal } from "../../context";
+import { motion } from "framer-motion";
 // css
 import styles from "../../styles/projects/projects.module.css";
 
 function Projects(props) {
-  const { projectHoverEffect } = useGlobal();
+  const { projectHoverEffect, setLoadingPage } = useGlobal();
   const { AllProjects } = props;
   const ProjectsRef = useRef(null);
 
@@ -17,21 +18,33 @@ function Projects(props) {
 
   return (
     <section className={styles.container}>
-      <div>
+      <motion.div
+        animate={{
+          translateY: 0,
+          opacity: 1,
+        }}
+      >
         <h2>WORK</h2>
         <h2>
           MY <span>PROJECTS</span>
         </h2>
-      </div>
+      </motion.div>
 
-      <div ref={ProjectsRef} className={styles.projectsContainer}>
+      <motion.div
+        ref={ProjectsRef}
+        className={styles.projectsContainer}
+        animate={{
+          translateY: 0,
+          opacity: 1,
+        }}
+      >
         {AllProjects.length &&
           AllProjects.map((e, i) => {
             const { _id, name, images } = e;
 
             return (
               <Link key={_id} href={`/preview/${_id}/?type=project`}>
-                <div>
+                <div onClick={() => setLoadingPage(true)}>
                   <Image src={images.preview} layout="fill" priority />
 
                   <div className={styles.layer}>
@@ -43,7 +56,7 @@ function Projects(props) {
               </Link>
             );
           })}
-      </div>
+      </motion.div>
     </section>
   );
 }

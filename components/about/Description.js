@@ -1,11 +1,18 @@
 import React from "react";
 import Link from "next/link";
+import { motion } from "framer-motion";
 // css
 import styles from "../../styles/about/description.module.css";
 
 function Description({ skills }) {
   return (
-    <section className={styles.container}>
+    <motion.section
+      className={styles.container}
+      animate={{
+        translateY: 0,
+        opacity: 1,
+      }}
+    >
       <div>
         <h2>WHO AM I?</h2>
         <p>
@@ -60,7 +67,7 @@ function Description({ skills }) {
           </span>
         </div>
       </div>
-    </section>
+    </motion.section>
   );
 }
 

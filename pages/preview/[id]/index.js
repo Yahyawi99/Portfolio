@@ -1,5 +1,6 @@
 import React from "react";
 import axios from "axios";
+import { motion } from "framer-motion";
 // components
 import Slider from "../../../components/preview/Slider";
 import Details from "../../../components/preview/Details";
@@ -11,7 +12,13 @@ function Preview(props) {
 
   return (
     <section className={styles.container}>
-      <div className={styles.backBtn}>
+      <motion.div
+        className={styles.backBtn}
+        animate={{
+          translateY: 0,
+          opacity: 1,
+        }}
+      >
         <button onClick={() => window.history.back()}>
           <svg
             clipRule="evenodd"
@@ -29,7 +36,7 @@ function Preview(props) {
 
           <p>Go Back</p>
         </button>
-      </div>
+      </motion.div>
 
       <Slider data={data} />
 

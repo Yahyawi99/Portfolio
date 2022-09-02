@@ -1,11 +1,18 @@
 import React from "react";
 import Link from "next/link";
+import { motion } from "framer-motion";
 // css
 import styles from "../../styles/preview/details.module.css";
 
 function Details({ data }) {
   return (
-    <section className={styles.container}>
+    <motion.section
+      className={styles.container}
+      animate={{
+        translateY: 0,
+        opacity: 1,
+      }}
+    >
       {data.map((e) => {
         const { _id, name, description, languages, github, live } = e;
 
@@ -47,7 +54,7 @@ function Details({ data }) {
           </div>
         );
       })}
-    </section>
+    </motion.section>
   );
 }
 

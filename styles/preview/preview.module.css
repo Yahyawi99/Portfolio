@@ -1,6 +1,9 @@
 .backBtn {
     width: 95%;
     max-width: 1000px;
+    opacity: 0;
+    transform: translateY(100px);
+    transition: 1s;
     margin: 75px 0 125px 0;
 }
 
@@ -37,6 +40,13 @@
 }
 
 
+/* Sections */
+.container>section {
+    opacity: 0;
+    transform: translateY(100px);
+    transition: 1s;
+    transition-delay: .5s;
+}
 
 
 /* ****************************** */
