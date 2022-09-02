@@ -3,7 +3,7 @@ import { StatusCodes } from "http-status-codes";
 import connectMongo from "../../../utils/connectDB";
 import Projects from "../../../models/Projects";
 
-// import AllProjects from "../../../data.json";
+import AllProjects from "../../../data.json";
 
 const getSingleProject = async (req, res) => {
   try {

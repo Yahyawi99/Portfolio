@@ -14,6 +14,7 @@ const getProjects = async (req, res) => {
     res.status(StatusCodes.OK).json({ AllProjects, hits: AllProjects.length });
   } catch (error) {
     console.log(error);
+    res.send();
   }
 };
 

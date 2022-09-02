@@ -3,6 +3,8 @@ import { StatusCodes } from "http-status-codes";
 import connectMongo from "../../utils/connectDB";
 import Challenges from "../../models/Challenges";
 
+// import AllChallenges from "../../challenges.json";
+
 const getChallenges = async (req, res) => {
   try {
     await connectMongo();
