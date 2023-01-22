@@ -32,7 +32,7 @@ const About = (props = null) => {
 
 // *******************
 export async function getServerSideProps() {
-  const response = await axios(`http://localhost:3000/api/skills`);
+  const response = await axios(`${process.env.BASE_URL}/api/skills`);
   const skills = response.data;
   return {
     props: skills,
