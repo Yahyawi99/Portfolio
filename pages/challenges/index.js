@@ -7,67 +7,77 @@ import { motion } from "framer-motion";
 // css
 import styles from "../../styles/projects/projects.module.css";
 
-function Challenges(props) {
+const Challenges = (props) => {
   const { projectHoverEffect, setLoadingPage } = useGlobal();
-  const { AllChallenges } = props;
   const ProjectsRef = useRef(null);
 
   useEffect(() => {
     projectHoverEffect(ProjectsRef.current);
   });
 
-  return (
-    <section className={styles.container}>
-      <motion.div
-        animate={{
-          translateY: 0,
-          opacity: 1,
-        }}
-      >
-        <h2>COOL</h2>
+  if (props) {
+    const { AllChallenges } = props;
 
-        <h2>
-          <span>FUN</span> PROJECTS
-        </h2>
-      </motion.div>
+    if (AllChallenges.length > 0) {
+      return (
+        <section className={styles.container}>
+          <motion.div
+            animate={{
+              translateY: 0,
+              opacity: 1,
+            }}
+          >
+            <h2>COOL</h2>
 
-      <motion.div
-        ref={ProjectsRef}
-        className={styles.projectsContainer}
-        animate={{
-          translateY: 0,
-          opacity: 1,
-        }}
-      >
-        {AllChallenges.length &&
-          AllChallenges.map((e, i) => {
-            const { _id, name, images } = e;
+            <h2>
+              <span>FUN</span> PROJECTS
+            </h2>
+          </motion.div>
 
-            return (
-              <Link key={_id} href={`/preview/${_id}/?type=challenge`}>
-                <div onClick={() => setLoadingPage(true)}>
-                  <Image src={images.preview} layout="fill" priority />
+          <motion.div
+            ref={ProjectsRef}
+            className={styles.projectsContainer}
+            animate={{
+              translateY: 0,
+              opacity: 1,
+            }}
+          >
+            {AllChallenges.length &&
+              AllChallenges.map((e, i) => {
+                const { _id, name, images } = e;
 
-                  <div className={styles.layer}>
-                    <img
-                      src={images.logo}
-                      alt="logo"
-                      className={styles.challengesIcon}
-                    />
+                return (
+                  <Link key={_id} href={`/preview/${_id}/?type=challenge`}>
+                    <div onClick={() => setLoadingPage(true)}>
+                      <Image
+                        src={images.preview}
+                        layout="fill"
+                        alt="preview"
+                        priority
+                      />
 
-                    <h2>{name}</h2>
-                  </div>
-                </div>
-              </Link>
-            );
-          })}
-      </motion.div>
-    </section>
-  );
-}
+                      <div className={styles.layer}>
+                        <img
+                          src={images.logo}
+                          alt="logo"
+                          className={styles.challengesIcon}
+                        />
+
+                        <h2>{name}</h2>
+                      </div>
+                    </div>
+                  </Link>
+                );
+              })}
+          </motion.div>
+        </section>
+      );
+    }
+  }
+};
 
 /*************/
-export const getStaticProps = async () => {
+export const getServerSideProps = async () => {
   const res = await axios(`${process.env.BASE_URL}/api/challenges`);
 
   return {

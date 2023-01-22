@@ -7,9 +7,8 @@ import Technologies from "../../components/about/Technologies";
 // css
 import styles from "../../styles/about/about.module.css";
 
-function About(props) {
+const About = (props = null) => {
   const { skills } = props;
-
   return (
     <section className={styles.container}>
       <motion.div
@@ -26,19 +25,18 @@ function About(props) {
       </motion.div>
 
       <Description skills={skills} />
-
       <Technologies skills={skills} />
     </section>
   );
-}
+};
 
 // *******************
-export const getStaticProps = async () => {
-  const response = await axios(`${process.env.BASE_URL}/api/skills`);
-
+export async function getServerSideProps() {
+  const response = await axios(`http://localhost:3000/api/skills`);
+  const skills = response.data;
   return {
-    props: response.data,
+    props: skills,
   };
-};
+}
 
 export default About;

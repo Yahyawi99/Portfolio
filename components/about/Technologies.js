@@ -13,7 +13,7 @@ function Technologies({ skills }) {
         opacity: 1,
       }}
     >
-      <h2>Here are some technologies I've been working with recently</h2>
+      <h2>Here are some technologies I&apos;ve been working with recently</h2>
 
       <div>
         {skills &&
