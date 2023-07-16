@@ -5,7 +5,7 @@ import { useGlobal } from "../../context";
 import styles from "../../styles/shared/nav.module.css";
 
 function Nav() {
-  const { nav, setNav, currentPath, setLoadingPage } = useGlobal();
+  const { nav, setNav, currentPath, setLoadingPage, mainRef } = useGlobal();
 
   return (
     <section className={`${styles.container} ${nav ? styles.openNav : ""}`}>
@@ -13,7 +13,13 @@ function Nav() {
         <Link href="/">
           <a
             className={`${currentPath === "/" ? styles.currentPath : ""}`}
-            onClick={() => setLoadingPage(true)}
+            onClick={() => {
+              mainRef.current.scrollTo({
+                top: 0,
+              });
+
+              setLoadingPage(true);
+            }}
           >
             <i>
               <svg
@@ -32,7 +38,13 @@ function Nav() {
         <Link href="/about">
           <a
             className={`${currentPath === "/about" ? styles.currentPath : ""}`}
-            onClick={() => setLoadingPage(true)}
+            onClick={() => {
+              mainRef.current.scrollTo({
+                top: 0,
+              });
+
+              setLoadingPage(true);
+            }}
           >
             <i>
               <svg
@@ -55,7 +67,13 @@ function Nav() {
                 ? styles.currentPath
                 : ""
             }`}
-            onClick={() => setLoadingPage(true)}
+            onClick={() => {
+              mainRef.current.scrollTo({
+                top: 0,
+              });
+
+              setLoadingPage(true);
+            }}
           >
             <i>
               <svg
@@ -76,7 +94,13 @@ function Nav() {
             className={`${
               currentPath === "/challenges" ? styles.currentPath : ""
             }`}
-            onClick={() => setLoadingPage(true)}
+            onClick={() => {
+              mainRef.current.scrollTo({
+                top: 0,
+              });
+
+              setLoadingPage(true);
+            }}
           >
             <i>
               <svg
@@ -97,7 +121,13 @@ function Nav() {
             className={`${
               currentPath === "/contact" ? styles.currentPath : ""
             }`}
-            onClick={() => setLoadingPage(true)}
+            onClick={() => {
+              mainRef.current.scrollTo({
+                top: 0,
+              });
+
+              setLoadingPage(true);
+            }}
           >
             <i>
               <svg

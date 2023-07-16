@@ -8,7 +8,7 @@ import { motion } from "framer-motion";
 import styles from "../../styles/projects/projects.module.css";
 
 const Challenges = (props) => {
-  const { projectHoverEffect, setLoadingPage } = useGlobal();
+  const { projectHoverEffect, setLoadingPage, mainRef } = useGlobal();
   const ProjectsRef = useRef(null);
 
   useEffect(() => {
@@ -48,7 +48,14 @@ const Challenges = (props) => {
 
                 return (
                   <Link key={_id} href={`/preview/${_id}/?type=challenge`}>
-                    <div onClick={() => setLoadingPage(true)}>
+                    <div
+                      onClick={() => {
+                        mainRef.current.scrollTo({
+                          top: 0,
+                        });
+                        setLoadingPage(true);
+                      }}
+                    >
                       <Image
                         src={images.preview}
                         layout="fill"

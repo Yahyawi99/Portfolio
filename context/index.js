@@ -1,6 +1,7 @@
 import React, { useContext, useState, useEffect, useRef } from "react";
 import { useRouter } from "next/router";
 import axios from "axios";
+import { resolve } from "styled-jsx/css";
 
 const AppContext = React.createContext();
 function Provider({ children }) {
@@ -33,13 +34,6 @@ function Provider({ children }) {
 
     setLoadingPage(false);
   }, [asPath]);
-
-  // scroll to top every time you open the nav bar
-  useEffect(() => {
-    mainRef.current.scrollTo({
-      top: 0,
-    });
-  }, [nav]);
 
   /* *************************************** */
   // Hover effect on Project

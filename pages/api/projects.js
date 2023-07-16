@@ -11,6 +11,8 @@ const getProjects = async (req, res) => {
 
     const AllProjects = await Projects.find();
 
+    AllProjects.sort((a, b) => a.toObject().order - b.toObject().order);
+
     res.status(StatusCodes.OK).json({ AllProjects, hits: AllProjects.length });
   } catch (error) {
     console.log(error);

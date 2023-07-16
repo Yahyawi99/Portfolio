@@ -21,6 +21,9 @@ const ProjectSchema = new mongoose.Schema({
     type: Object,
     required: [true, "images cannot be empty!"],
   },
+  order: {
+    type: String,
+  },
 });
 
 let Projects;
