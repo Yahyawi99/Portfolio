@@ -26,7 +26,7 @@ function Document() {
           rel="stylesheet"
         />
 
-        <link rel="icon" href="/assets/images/godfather.jpg" />
+        <link rel="icon" href="/assets/images/logo.png" />
       </Head>
       <body>
         <Main />
