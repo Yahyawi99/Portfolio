@@ -84,9 +84,10 @@ function Intro() {
       </div>
 
       <p className={styles.paragraph}>
-        I&apos;m a passionate Frontend Developer with some Backend knowledge,
-        specializing in building awesome UX/UI designs that deliver peculiar and
-        exceptional digital experiences.
+        I&apos;m a passionate Fullstack Developer with expertise in both
+        Frontend and Backend technologies. My skillset allows me to seamlessly
+        work on all aspects of the development process, ensuring the smooth
+        functioning and appealing design of web applications.
       </p>
 
       <Link href="/contact">

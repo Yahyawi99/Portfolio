@@ -51,3 +51,18 @@
     transition: 1s;
     transition-delay: .5s;
 }
+
+/* *********************************** */
+/* *********************************** */
+/* *********************************** */
+/* Media Query */
+@media screen and (max-width:700px) {
+    .container>div:nth-child(1) h2:nth-child(1) {
+        font-size: 3rem;
+
+    }
+
+    .container>div:nth-child(1) h2:nth-child(2) {
+        font-size: 4rem;
+    }
+}

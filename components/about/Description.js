@@ -53,7 +53,7 @@ function Description({ skills }) {
 
           <span>
             <p>Phone : </p>
-            <p>+212675391909</p>
+            <p>+212625819239</p>
           </span>
 
           <span>
@@ -63,7 +63,7 @@ function Description({ skills }) {
 
           <span>
             <p>Email : </p>
-            <p> yassinyahyawi26@gmail.com</p>
+            <p> yassinyahyawi49@gmail.com</p>
           </span>
         </div>
       </div>

@@ -10,7 +10,7 @@ function Social() {
       <div>
         <div>
           <Image
-            src="/assets/images/godfather.jpg"
+            src="/assets/images/logo.png"
             layout="fill"
             alt="Logo"
             objectFit="contain"
@@ -35,7 +35,7 @@ function Social() {
             </a>
           </Link>
 
-          <Link href="/">
+          {/* <Link href="/">
             <a target="_blank">
               <i>
                 <svg
@@ -49,7 +49,7 @@ function Social() {
               </i>
               <p>TWITTER</p>
             </a>
-          </Link>
+          </Link> */}
 
           <Link href="/">
             <a target="_blank">
@@ -67,7 +67,7 @@ function Social() {
             </a>
           </Link>
 
-          <Link href="https://web.facebook.com/yassinyahyawi8/">
+          {/* <Link href="https://web.facebook.com/yassinyahyawi8/">
             <a target="_blank">
               <i>
                 <svg
@@ -81,7 +81,7 @@ function Social() {
               </i>
               <p>FACEBOOK</p>
             </a>
-          </Link>
+          </Link> */}
         </div>
       </div>
     </section>

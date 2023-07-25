@@ -12,7 +12,7 @@ function Header() {
     <header className={styles.container}>
       <div>
         <Image
-          src="/assets/images/godfather.jpg"
+          src="/assets/images/logo.png"
           layout="fill"
           alt="logo"
           priority
