@@ -31,7 +31,7 @@ function Text() {
           </span>
         </a>
 
-        <a href="tel:+212675391909">
+        <a href="tel:+212625819239">
           <i>
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -45,7 +45,7 @@ function Text() {
 
           <span>
             <p>Call me :</p>
-            <p>+212675391909</p>
+            <p>+212625819239</p>
           </span>
         </a>
       </div>
