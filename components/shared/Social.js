@@ -51,7 +51,7 @@ function Social() {
             </a>
           </Link> */}
 
-          <Link href="/">
+          <Link href="https://www.linkedin.com/in/yassin-yahyawi-90556321a/">
             <a target="_blank">
               <i>
                 <svg
