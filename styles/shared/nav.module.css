@@ -1,0 +1,189 @@
+.container {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    margin-left: auto;
+}
+
+.container>div {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+/* Icon */
+.container a {
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--clr-light-4);
+    border-radius: 50%;
+    cursor: pointer;
+    position: relative;
+}
+
+
+.container>div>a:hover {
+    color: var(--clr-dark-4);
+    background-color: var(--clr-light-4);
+}
+
+.container a svg {
+    fill: var(--clr-light-4);
+    transition: .25s;
+}
+
+.container>div>a:hover svg {
+    fill: var(--clr-dark-4)
+}
+
+
+/* Icon Text */
+.container a>p {
+    width: 125px;
+    height: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    background-color: var(--clr-light-4);
+    color: var(--clr-dark-4);
+    position: absolute;
+    left: -75px;
+    font-size: .9rem;
+    font-weight: 500;
+    border-radius: 25px;
+    z-index: 0;
+    opacity: 0;
+    pointer-events: none;
+    padding: 0px 0px 0px 50px;
+}
+
+.container>div>a:nth-child(3)>p {
+    width: 140px;
+    left: -90px;
+}
+
+.container>div>a:nth-child(4)>p {
+    width: 150px;
+    left: -100px;
+}
+
+.container a>i {
+    position: relative;
+    z-index: 1;
+}
+
+.container>div>a:hover p {
+    transition: .5s;
+    opacity: 1;
+    padding: 0px 0px 0px 20px;
+}
+
+/* layer */
+.layer {
+    display: none;
+}
+
+
+/* **************************** */
+/* Current Path styles */
+.container .currentPath {
+    color: var(--clr-dark-4);
+    background-color: var(--clr-light-4);
+    pointer-events: none;
+}
+
+.container .currentPath svg {
+    fill: var(--clr-dark-4)
+}
+
+
+/* ***************************** */
+/* ***************************** */
+/* Media query */
+@media screen and (min-width:0px) and (max-width:950px) {
+
+    /* *************************** */
+    .container {
+        width: 100%;
+        height: 100vh;
+        justify-content: flex-end;
+        position: absolute;
+        z-index: 1;
+        transform: translateX(100%);
+        transition-delay: .25s;
+    }
+
+    .container>div:nth-child(1) {
+        width: 100%;
+        max-width: 400px;
+        height: 100vh;
+        background-color: var(--clr-dark-3);
+        transform: translateX(100%);
+        transition: .25s;
+        padding: 75px 0 0 0;
+    }
+
+    .container .layer {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        position: absolute;
+        inset: 0;
+        z-index: -1;
+        transition: .5s;
+    }
+
+
+    /* Toggle functionnality  */
+    .openNav {
+        transform: translateX(0);
+        transition-delay: .0s;
+        overflow: hidden;
+    }
+
+
+    .openNav>div:nth-child(1) {
+        transform: translateX(0%);
+        transition: .5s;
+    }
+
+    .openNav .layer {
+        background-color: var(--layer-1);
+        transition: .5s;
+    }
+
+
+    /* *************************** */
+    /* Links */
+    .container a {
+        justify-content: space-between;
+        width: 100%;
+        border-radius: 0px;
+        padding: 0 20px;
+    }
+
+    .container a>p {
+        width: fit-content;
+        background-color: transparent;
+        color: inherit;
+        position: relative;
+        left: 0;
+        opacity: 1;
+        padding: 0;
+        transition: inherit;
+    }
+
+    .container>div>a:nth-child(3)>p,
+    .container>div>a:nth-child(4)>p {
+        width: fit-content;
+        left: 0;
+    }
+
+}

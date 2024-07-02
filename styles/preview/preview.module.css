@@ -1,0 +1,76 @@
+.backBtn {
+    width: 95%;
+    max-width: 1000px;
+    opacity: 0;
+    transform: translateY(100px);
+    transition: 1s;
+    margin: 75px 0 125px 0;
+}
+
+.backBtn>button {
+    width: 100%;
+    max-width: 175px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    color: var(--clr-light-1);
+    background-color: var(--clr-light-2);
+    font-size: 1rem;
+    cursor: pointer;
+    border: 2px solid transparent;
+    transition: .25s;
+    padding: 10px 0;
+}
+
+.backBtn svg {
+    width: 25px;
+    fill: var(--clr-light-1);
+    transition: .25s;
+}
+
+.backBtn>button:hover {
+    color: var(--clr-light-2);
+    background-color: transparent;
+    border: 2px solid var(--clr-light-2);
+}
+
+.backBtn>button:hover svg {
+    fill: var(--clr-light-2);
+}
+
+
+/* Sections */
+.container>section {
+    opacity: 0;
+    transform: translateY(100px);
+    transition: 1s;
+    transition-delay: .5s;
+}
+
+
+/* ****************************** */
+/* ****************************** */
+/* Media Query */
+@media screen and (max-width:950px) {
+    .container {
+        padding: 50px 0;
+    }
+
+    .backBtn {
+        margin: 0 0 50px 0;
+    }
+
+}
+
+@media screen and (max-width:500px) {
+    .backBtn>button {
+        max-width: 100px;
+        gap: 10px;
+        font-size: .8rem;
+    }
+
+    .backBtn svg {
+        width: 15px;
+    }
+}

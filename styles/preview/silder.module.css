@@ -1,0 +1,147 @@
+.container {
+    width: 100%;
+    max-width: 1100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 10px;
+}
+
+
+/* Icons */
+.container button {
+    width: 40px;
+    height: 40px;
+}
+
+.container button svg {
+    width: 100%;
+    height: 100%;
+    fill: var(--clr-light-1);
+    cursor: pointer;
+    transition: .25s;
+}
+
+.container button:hover svg {
+    fill: var(--clr-light-4);
+}
+
+/* Images */
+.container>div {
+    width: 100%;
+    max-width: 700px;
+}
+
+.imageContainer {
+    width: 100%;
+    height: 325px;
+    display: flex;
+    position: relative;
+}
+
+.imageContainer>div {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    transition: .5s ease-out;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+/* Mobile Button */
+.mobileBtns {
+    display: none;
+    position: relative;
+    z-index: 0;
+}
+
+
+/* ****************************** */
+/* ****************************** */
+/* Media Query */
+@media screen and (max-width:950px) {
+    .container {
+        padding: 0px;
+    }
+}
+
+@media screen and (min-width : 0px) and (max-width:768px) {
+    .container {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    /* Icons */
+    .container>button {
+        display: none;
+    }
+
+    /* Mobile Button */
+    .mobileBtns {
+        display: flex;
+        justify-content: center;
+        gap: 150px;
+    }
+
+    /* Images */
+    .container>div {
+        width: 95%;
+        max-width: 500px;
+    }
+
+    .imageContainer {
+        height: 250px;
+    }
+
+    .imageContainer>div {
+        transform: scale(1);
+    }
+}
+
+@media screen and (min-width : 0px) and (max-width:500px) {
+
+    /* Mobile Button */
+    .mobileBtns {
+        gap: 75px;
+    }
+
+    /* Buttons */
+    .container button {
+        width: 20px;
+        height: 20px;
+    }
+
+    /* Images */
+    .container>div {
+        width: 95%;
+        max-width: 300px;
+    }
+
+    .imageContainer {
+        height: 140px;
+    }
+
+    .imageContainer>div {
+        border-radius: 5px;
+    }
+}
+
+@media screen and (min-width:1250px) {
+    .imageContainer>div {
+        transform: scale(1.25);
+    }
+}
+
+@media screen and (min-width:400px) and (max-width:500px) {
+    .container {
+        margin: 25px 0;
+    }
+
+    .imageContainer>div {
+        transform: scale(1.3);
+    }
+
+    .mobileBtns {
+        margin-top: 20px;
+    }
+}

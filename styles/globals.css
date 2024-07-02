@@ -1,0 +1,51 @@
+/* start */
+
+:root {
+  --clr-light-1: #fff;
+  --clr-light-2: #208AAE;
+  --clr-light-3: #C3DBC5;
+  --clr-light-4: #59C3C3;
+
+  --clr-green: rgb(10, 190, 10);
+
+  --clr-dark-1: #0D2149;
+  --clr-dark-2: #232C33;
+  --clr-dark-3: #01172F;
+  --clr-dark-4: #000;
+
+  --layer-1: rgba(0, 0, 0, .8);
+  --layer-2: rgba(0, 0, 0, 0.5);
+  --layer-3: rgba(0, 0, 0, 0.25);
+}
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+
+
+body {
+  width: 100vw;
+  height: 100vh;
+  background: linear-gradient(var(--layer-1), var(--layer-1)), url("/assets/images/back-1.jpg") center/cover no-repeat;
+  font-family: 'Oswald', sans-serif;
+
+}
+
+
+/* shared classes */
+button {
+  border: none;
+  background: transparent;
+  color: inherit;
+  font-family: inherit;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}

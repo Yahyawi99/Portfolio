@@ -1,0 +1,111 @@
+.container {
+    width: 70%;
+    max-width: 600px;
+    min-width: 450px;
+    display: flex;
+    flex-wrap: wrap;
+    align-self: flex-start;
+    column-gap: 20px;
+    row-gap: 50px;
+    position: relative;
+    padding-bottom: 50px;
+    margin-bottom: 25px;
+}
+
+.container>div {
+    width: 100%;
+    max-width: 275px;
+    color: var(--clr-light-1);
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.container>div:last-of-type {
+    max-width: 95%;
+}
+
+.container input,
+.container textarea {
+    background-color: var(--clr-dark-3);
+    color: var(--clr-light-1);
+    font-family: 'Oswald', sans-serif;
+    font-size: 1rem;
+    border: 2px solid var(--clr-light-4);
+    transition: .25s;
+    padding: 20px 0px 20px 10px;
+}
+
+.container textarea {
+    height: 150px;
+    resize: vertical;
+    padding: 10px 0px 20px 10px;
+}
+
+.container input::placeholder {
+    color: var(--clr-light-3);
+    opacity: .25;
+}
+
+.container input:focus,
+.container textarea:focus {
+    outline: 2px solid var(--clr-light-4);
+}
+
+.container>button {
+    width: 95%;
+    max-width: 125px;
+    height: 55px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--clr-light-2);
+    color: var(--clr-light-1);
+    font-weight: 500;
+    font-size: .9rem;
+    text-align: center;
+    letter-spacing: 1px;
+    border-radius: 25px;
+    cursor: pointer;
+    border: 2px solid transparent;
+    transition: .25s;
+    position: relative;
+}
+
+.container>button:hover {
+    border: 2px solid var(--clr-light-2);
+    color: var(--clr-light-2);
+    background-color: transparent;
+}
+
+/* Message */
+.message {
+    position: absolute;
+    color: var(--clr-green);
+    bottom: 0;
+}
+
+/* ****************************** */
+/* ****************************** */
+/* Media Query */
+@media screen and (max-width:1130px) {
+    .container>div {
+        max-width: 95%;
+    }
+}
+
+@media screen and (max-width:1000px) {
+    .container {
+        width: 100%;
+        max-width: 100%;
+        min-width: 100%;
+    }
+
+    .container>div {
+        max-width: 100%;
+    }
+
+    .container>div:last-of-type {
+        max-width: 100%;
+    }
+}

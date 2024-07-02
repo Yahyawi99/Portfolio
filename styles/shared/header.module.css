@@ -1,0 +1,27 @@
+.container {
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+    position: sticky;
+    top: 0;
+    z-index: 2;
+    background-color: var(--clr-dark-3);
+    padding: 10px;
+}
+
+
+/* logo */
+.container>div:nth-child(1) {
+    width: 50px;
+    height: 50px;
+    position: relative;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+
+
+/* hamburger Icon */
+.container>div:nth-child(2) {
+    color: var(--clr-light-4);
+}

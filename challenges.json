@@ -1,0 +1,121 @@
+[
+  {
+    "_id": "630e027c2f5c1e206a4b9a88",
+    "name": "Github User Search",
+    "github": "https://github.com/Yahyawi99/Github-User-Search",
+    "live": "https://github-user-search-yahyawi.netlify.app/",
+    "images": {
+      "preview": "/assets/images/github/screenshot.png",
+      "logo": "/assets/images/github/logo.svg"
+    },
+    "screenshot": {
+      "first": "/assets/images/github/github.png",
+      "second": "/assets/images/github/gihtub-2.png",
+      "third": "/assets/images/github/gihtub-3.png"
+    },
+    "languages": ["HTML/CSS/JS", "REACT"],
+    "description": "This was my first API project , I used  the GitHub users API to pull profile data and display it. It's was a great challenge back then when I was a junior dev. You can see relevant user information based on their search and\nSwitch between light and dark themes."
+  },
+  {
+    "_id": "630e04812f5c1e206a4b9a89",
+    "name": "Tic Tac Toe",
+    "github": "https://github.com/Yahyawi99/Tic-Tac-Toe",
+    "live": "https://tic-tac-toe-react-project-master.netlify.app/game",
+    "images": {
+      "preview": "/assets/images/tictac/screenshot.png",
+      "logo": "/assets/images/tictac/logo.svg"
+    },
+    "screenshots": {
+      "first": "/assets/images/tictac/tictac.png",
+      "second": "/assets/images/tictac/tictac-2.png",
+      "third": "/assets/images/tictac/tictac-3.png"
+    },
+    "languages": ["HTML/CSS/JS", "REACT"],
+    "description": "This classic practice was a great exercise to complete. It tested my HTML semantics, my grid layout skill, as well as my JS logic. you can play the game either solo vs the computer or multiplayer against another person."
+  },
+  {
+    "_id": "630e3128ed1ea839e131974c",
+    "name": "Countries App",
+    "github": "https://github.com/Yahyawi99/Countries",
+    "live": "https://countries-yahyawi.vercel.app/",
+    "images": {
+      "preview": "/assets/images/countries/screenshot.png",
+      "logo": "/assets/images/countries/logo.svg"
+    },
+    "screenshots": {
+      "first": "/assets/images/countries/countries.png",
+      "second": "/assets/images/countries/countries-2.png",
+      "third": "/assets/images/countries/countries-3.png"
+    },
+    "description": "This challenge is integrating with the REST Countries API to pull country data and display it. You can see all countries from the API on the homepage, search for a country using an input field, filter countries by region, click on a country to see more detailed information on a separate page and more.",
+    "languages": ["HTML/CSS/JS"]
+  },
+  {
+    "_id": "630e33c7ed1ea839e131974d",
+    "name": "Jobs Listing",
+    "github": "https://github.com/Yahyawi99/job-listing",
+    "live": "https://job-listing-yahyawi.vercel.app/",
+    "images": {
+      "preview": "/assets/images/jobs/screenshot.png",
+      "logo": "/assets/images/jobs/logo.svg"
+    },
+    "screenshots": {
+      "first": "/assets/images/jobs/jobs.png",
+      "second": "/assets/images/jobs/jobs-2.png",
+      "third": "/assets/images/jobs/jobs-3.png"
+    },
+    "description": "I build out this jobs board using a local data.json. You can view the optimal layout for each page depending on their device's screen size, see hover states for all interactive elements throughout the site, be able to filter jobs on the index page by title, location, and whether a job is for a full-time position...",
+    "languages": ["HTML/CSS/JS", "REACT"]
+  },
+  {
+    "_id": "630e364aed1ea839e131974f",
+    "name": "Product Landing Page",
+    "github": "https://github.com/Yahyawi99/product-landing-page",
+    "live": "https://product-landing-page-lac.vercel.app/",
+    "images": {
+      "preview": "/assets/images/landing-page/screenshot.png",
+      "logo": "/assets/images/landing-page/logo.svg"
+    },
+    "screenshots": {
+      "first": "/assets/images/landing-page/landing-page.png",
+      "second": "/assets/images/landing-page/landing-page-2.png",
+      "third": "/assets/images/landing-page/landing-page-3.png"
+    },
+    "languages": ["HTML/CSS/JS"],
+    "description": "In this Project, I build a beautiful product page.  putting my JS skills to the test with a lightbox product gallery and cart functionality! You can open a lightbox gallery by clicking on the large product image, switch the large product image by clicking on the small thumbnail images, add items to the cart, view the cart and remove items from it..."
+  },
+  {
+    "_id": "630e393aed1ea839e1319752",
+    "name": "Timer",
+    "github": "https://github.com/Yahyawi99/timer",
+    "live": "https://timer-yahyawi.vercel.app/",
+    "images": {
+      "preview": "/assets/images/timer/screenshot.png",
+      "logo": "/assets/images/timer/logo.svg"
+    },
+    "screenshots": {
+      "first": "/assets/images/timer/timer.png",
+      "second": "/assets/images/timer/timer.png",
+      "third": "/assets/images/timer/timer.png"
+    },
+    "languages": ["HTML/CSS/JS", "REACT"],
+    "description": "This Pomodoro app provided some tricky challenges, including building a circular progress bar. I build a range of customizations, like colors and fonts. You will set a Pomodoro timer and short & long break timers, customize how long each timer runs for, see a circular progress bar that updates every second and represents how far through their timer they are."
+  },
+  {
+    "_id": "630e3d0ced1ea839e1319753",
+    "name": "Tip Calculator",
+    "github": "https://github.com/Yahyawi99/tip-calculator",
+    "live": "https://tip-calculator-yahyawi.vercel.app/",
+    "images": {
+      "preview": "/assets/images/tip/screenshot.png",
+      "logo": "/assets/images/tip/logo.svg"
+    },
+    "screenshots": {
+      "first": "/assets/images/tip/tip.png",
+      "second": "/assets/images/tip/tip.png",
+      "third": "/assets/images/tip/tip.png"
+    },
+    "languages": ["HTML/CSS/JS"],
+    "description": "This is a small app created it when I was starting with JavaScript. This calculator functionality will be a fun to use! You can calculate the correct tip and total cost of the bill per person."
+  }
+]
