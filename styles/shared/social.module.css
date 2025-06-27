@@ -31,7 +31,7 @@
     gap: 25px;
 }
 
-.container a {
+.container .link {
     width: 50px;
     height: 50px;
     display: flex;
@@ -44,27 +44,27 @@
     position: relative;
 }
 
-.container a>i {
+.container .link>i {
     position: relative;
     z-index: 1;
 }
 
-.container a svg {
+.container .link svg {
     fill: var(--clr-light-4);
     transition: .25s;
 }
 
-.container a:hover {
+.container .link:hover {
     color: var(--clr-dark-4);
     background-color: var(--clr-light-4);
 }
 
-.container a:hover svg {
+.container .link:hover svg {
     fill: var(--clr-dark-4);
 }
 
 /* Icon text */
-.container a>p {
+.container .link>p {
     width: 130px;
     height: 100%;
     display: flex;
@@ -84,13 +84,13 @@
     padding: 0px 0px 0px 25px;
 }
 
-.container a:nth-child(3)>p,
-.container a:nth-child(4)>p {
+.container .link:nth-child(3)>p,
+.container .link:nth-child(4)>p {
     width: 140px;
     left: 0px;
 }
 
-.container a:hover p {
+.container .link:hover p {
     opacity: 1;
     padding: 0px 0px 0px 60px;
 }

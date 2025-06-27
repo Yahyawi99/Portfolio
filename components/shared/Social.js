@@ -20,7 +20,7 @@ function Social() {
 
         <div>
           <Link href="https://github.com/Yahyawi99">
-            <a target="_blank">
+            <div className={styles.link}>
               <i>
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -32,7 +32,7 @@ function Social() {
                 </svg>
               </i>
               <p>GITHUB</p>
-            </a>
+            </div>
           </Link>
 
           {/* <Link href="/">
@@ -52,7 +52,7 @@ function Social() {
           </Link> */}
 
           <Link href="/">
-            <a target="_blank">
+            <div className={styles.link}>
               <i>
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -64,7 +64,7 @@ function Social() {
                 </svg>
               </i>
               <p>LINKEDIN</p>
-            </a>
+            </div>
           </Link>
 
           {/* <Link href="https://web.facebook.com/yassinyahyawi8/">

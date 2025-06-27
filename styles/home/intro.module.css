@@ -75,11 +75,9 @@
 
 /* Button */
 .container button {
-    width: 50%;
-    max-width: 150px;
+    width: 150px;
     background-color: var(--clr-light-2);
     color: var(--clr-light-1);
-    position: relative;
     cursor: pointer;
     font-weight: 500;
     font-size: .8rem;

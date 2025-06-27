@@ -9,7 +9,7 @@ const getProjects = async (req, res) => {
   try {
     await connectMongo();
 
-    const AllProjects = await Projects.find();
+    const AllProjects = await Projects.find({});
 
     AllProjects.sort((a, b) => a.toObject().order - b.toObject().order);
 
