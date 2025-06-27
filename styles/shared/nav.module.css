@@ -16,7 +16,7 @@
 }
 
 /* Icon */
-.container a {
+.container span {
     width: 50px;
     height: 50px;
     display: flex;
@@ -29,23 +29,23 @@
 }
 
 
-.container>div>a:hover {
+.container>div span:hover {
     color: var(--clr-dark-4);
     background-color: var(--clr-light-4);
 }
 
-.container a svg {
+.container span svg {
     fill: var(--clr-light-4);
     transition: .25s;
 }
 
-.container>div>a:hover svg {
+.container>div span:hover svg {
     fill: var(--clr-dark-4)
 }
 
 
 /* Icon Text */
-.container a>p {
+.container span>p {
     width: 125px;
     height: 100%;
     display: flex;
@@ -60,22 +60,23 @@
     border-radius: 25px;
     z-index: 0;
     opacity: 0;
+    transition: .2s;
     pointer-events: none;
     padding: 0px 0px 0px 50px;
 }
 
 
-.container .challengesLink>a>p {
+.container>div>a:nth-child(4) p {
     width: 150px;
     left: -100px;
 }
 
-.container a>i {
+.container span>i {
     position: relative;
     z-index: 1;
 }
 
-.container>div>a:hover p {
+.container>div span:hover p {
     transition: .5s;
     opacity: 1;
     padding: 0px 0px 0px 20px;
