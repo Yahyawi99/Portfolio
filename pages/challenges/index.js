@@ -2,7 +2,7 @@ import React, { useEffect, useRef } from "react";
 import axios from "axios";
 import { useGlobal } from "../../context";
 import Link from "next/link";
-import Image from "next/image";
+import Image from "next/legacy/image";
 import { motion } from "framer-motion";
 // css
 import styles from "../../styles/projects/projects.module.css";

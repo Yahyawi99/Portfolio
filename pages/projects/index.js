@@ -1,6 +1,6 @@
 import React, { useEffect, useRef } from "react";
 import axios from "axios";
-import Image from "next/image";
+import Image from "next/legacy/image";
 import Link from "next/link";
 import { useGlobal } from "../../context";
 import { motion } from "framer-motion";

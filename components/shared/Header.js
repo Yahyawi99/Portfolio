@@ -1,7 +1,7 @@
 import React from "react";
 import { useGlobal } from "../../context";
 import { Fade } from "hamburger-react";
-import Image from "next/image";
+import Image from "next/legacy/image";
 // css
 import styles from "../../styles/shared/header.module.css";
 

@@ -15,6 +15,12 @@
     gap: 25px;
 }
 
+.container .social {
+    display: none;
+    flex-direction: column;
+    gap: 25px;
+}
+
 /* Icon */
 .container span {
     width: 50px;
@@ -108,10 +114,10 @@
 
     /* *************************** */
     .container {
-        width: 100%;
-        height: 100vh;
-        justify-content: flex-end;
+        width: 100vw;
+        height: 100%;
         position: absolute;
+        top: 0;
         z-index: 1;
         transform: translateX(100%);
         transition-delay: .25s;
@@ -120,11 +126,19 @@
     .container>div:nth-child(1) {
         width: 100%;
         max-width: 400px;
-        height: 100vh;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        right: 0;
         background-color: var(--clr-dark-3);
         transform: translateX(100%);
         transition: .25s;
         padding: 75px 0 0 0;
+    }
+
+    /* social */
+    .container .social {
+        display: flex;
     }
 
     .container .layer {
@@ -136,6 +150,8 @@
         z-index: -1;
         transition: .5s;
     }
+
+
 
 
     /* Toggle functionnality  */
@@ -159,14 +175,14 @@
 
     /* *************************** */
     /* Links */
-    .container a {
+    .container span {
         justify-content: space-between;
         width: 100%;
         border-radius: 0px;
         padding: 0 20px;
     }
 
-    .container a>p {
+    .container span>p {
         width: fit-content;
         background-color: transparent;
         color: inherit;
@@ -177,8 +193,8 @@
         transition: inherit;
     }
 
-    .container>div>a:nth-child(3)>p,
-    .container>div>a:nth-child(4)>p {
+    .container>div>a:nth-child(3) p,
+    .container>div>a:nth-child(4) p {
         width: fit-content;
         left: 0;
     }

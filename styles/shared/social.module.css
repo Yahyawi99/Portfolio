@@ -64,7 +64,7 @@
 }
 
 /* Icon text */
-.container .link>p {
+.container .link p {
     width: 130px;
     height: 100%;
     display: flex;
@@ -84,8 +84,8 @@
     padding: 0px 0px 0px 25px;
 }
 
-.container .link:nth-child(3)>p,
-.container .link:nth-child(4)>p {
+.container .link:nth-child(3) p,
+.container .link:nth-child(4) p {
     width: 140px;
     left: 0px;
 }
