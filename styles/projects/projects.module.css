@@ -57,7 +57,7 @@
 }
 
 
-.projectsContainer>div {
+.projectsContainer div {
     width: 270px;
     height: 270px;
     border-radius: 5px;

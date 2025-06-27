@@ -41,7 +41,7 @@ function Provider({ children }) {
     const myProjects = [...container.children];
 
     myProjects.forEach((e) => {
-      const layer = e.children[1];
+      const layer = e.children[0].children[1];
 
       e.addEventListener("mouseenter", (e) => {
         if (e.offsetY <= 30) {

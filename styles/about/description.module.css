@@ -28,8 +28,7 @@
 }
 
 .container>div:nth-child(1) button {
-    width: 100%;
-    max-width: 150px;
+    width: 150px;
     background-color: var(--clr-light-2);
     border: 2px solid var(--clr-light-2);
     cursor: pointer;
