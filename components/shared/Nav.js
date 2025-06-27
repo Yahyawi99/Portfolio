@@ -144,7 +144,7 @@ function Nav() {
         </Link>
 
         <div className={styles.social}>
-          <Link href="https://github.com/Yahyawi99">
+          <Link href="https://github.com/Yahyawi99" target="_blank">
             <span className={styles.link}>
               <i>
                 <svg
@@ -160,7 +160,10 @@ function Nav() {
             </span>
           </Link>
 
-          <Link href="/">
+          <Link
+            href="https://www.linkedin.com/in/yassin-yahyawi-90556321a/"
+            target="_blank"
+          >
             <span className={styles.link}>
               <i>
                 <svg
