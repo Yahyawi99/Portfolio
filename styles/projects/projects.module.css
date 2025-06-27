@@ -94,7 +94,8 @@
 
 /* For Fun Challenges */
 .layer .challengesIcon {
-    max-width: 75px;
+    width: 100%;
+    max-width: 50px;
 }
 
 
