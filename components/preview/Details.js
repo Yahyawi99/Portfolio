@@ -19,7 +19,11 @@ function Details({ data }) {
         return (
           <div key={_id}>
             <h2>{name}</h2>
-            <p>{description}</p>
+            <p
+              dangerouslySetInnerHTML={{
+                __html: description.replace(/\\n/g, "<br>"),
+              }}
+            />
 
             <div>
               <span>
