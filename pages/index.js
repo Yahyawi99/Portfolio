@@ -7,7 +7,7 @@ function Home() {
   return (
     <>
       <Head>
-        <title>Yassin Yahyawi</title>
+        <title>Yassine Yahyawi</title>
       </Head>
 
       <section>

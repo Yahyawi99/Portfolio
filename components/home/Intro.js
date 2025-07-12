@@ -26,7 +26,7 @@ function Intro() {
               scaleX: 1,
             }}
           >
-            Yassin
+            Yassine
           </motion.h2>
           <motion.h2
             animate={{
