@@ -19,7 +19,7 @@ function Social() {
         </div>
 
         <div>
-          <Link href="https://github.com/Yahyawi99" target="_blank">
+          <Link href="" target="_blank">
             <div className={styles.link}>
               <i>
                 <svg
@@ -36,7 +36,7 @@ function Social() {
           </Link>
 
           <Link
-            href="https://www.linkedin.com/in/yassin-yahyawi-90556321a/"
+            href=""
             target="_blank"
           >
             <div className={styles.link}>
